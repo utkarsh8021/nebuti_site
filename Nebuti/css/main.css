@@ -637,6 +637,13 @@ h3 span {
   background-color: #424d58;
 }
 
+section.contact-us.pt-50.pb-40.relative{
+  background-image: url(../img/napal_pattern.jpg);
+  background-repeat: repeat;
+
+}
+
+
 .bg-gray-60:before {
   content: "";
   display: block;

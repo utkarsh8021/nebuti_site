@@ -12294,7 +12294,7 @@ form.form .subscribe-submit {
 
 .cws_prlx_layer {
   display: block;
-  position: absolute;
+  position:absolute;
   z-index: 1;
   top: 0;
   left: 50%;

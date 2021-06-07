@@ -45,6 +45,16 @@
       padding: 0px 5px;
     }
 
+    @media only screen and (max-width: 600px) {
+      .slider2 {
+        display: none;
+      }
+
+      .hero-page{
+        height: 90% !important;
+      }
+    }
+
 
     .slick-slide img {
       width: 100%;
@@ -140,6 +150,19 @@
 
     }
 
+    html {
+      overflow: hidden;
+    }
+
+    .loading {
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      z-index: 999;
+      text-align: center;
+      background: white url('./img/Logo/preloader2.gif') no-repeat center;
+    }
+
     /* @-webkit-keyframes fadeInUpSD {
     0% {
       opacity: 0;
@@ -210,8 +233,9 @@
 
 </head>
 
-<body>
+<body onload="loadPage()">
   <!-- header page-->
+  <div class="loading"></div>
   <header>
     <!-- site top panel-->
     <!-- <div class="site-top-panel">
@@ -292,8 +316,7 @@
             <!-- End Item With Sub-->
             <!-- <li class="slash">/</li> -->
             <!-- Item With Sub-->
-            <li><a href="page-about-us.html" class="mn-has-sub">Pages <i
-                  class="fa fa-angle-down button_open"></i></a>
+            <li><a href="page-about-us.html" class="mn-has-sub">Pages <i class="fa fa-angle-down button_open"></i></a>
               <!-- Sub-->
               <ul class="mn-sub mn-has-multi">
                 <li class="mn-sub-multi"><a class="mn-group-title">Pages</a>
@@ -335,12 +358,12 @@
             <!-- End Item With Sub-->
             <li class="slash">&nbsp</li>
             <!-- Item With Sub-->
-            
+
             <!-- Item-->
             <li class="search"><a href="page-contact.html">Contact</a></li>
-            
+
             <li><a href="page-contact.html">Achievements</a></li>
-            
+
             <!-- End Item-->
           </ul>
         </div>
@@ -371,7 +394,7 @@
 
         <div class="slide">
           <img src="img/22.jpg" class="hero-img" />
-          <h1 style="font-size: 2rem;" class="action font-4">Tailormade Tours with<br/>34 Years of Experience</h1>
+          <h1 style="font-size: 2rem;" class="action font-4">Tailormade Tours with<br />34 Years of Experience</h1>
         </div>
 
         <div class="slide">
@@ -399,11 +422,11 @@
           <img src="img/2.jpg" class="top-img" style="width:90%" />
         </div>
         <div>
-          <p class="action font-3"  style="color: aliceblue;">Pokhra</p>
+          <p class="action font-3" style="color: aliceblue;">Pokhra</p>
           <img src="img/3.jpg" class="top-img" style="width: 90%;" />
         </div>
         <div>
-          <p class="action font-3"  style="color: aliceblue;">Mount Everest</p>
+          <p class="action font-3" style="color: aliceblue;">Mount Everest</p>
           <img src="img/4.jpg" class="top-img" style="width: 90%;" />
         </div>
       </section>
@@ -634,8 +657,9 @@
         <div class="col-md-8">
           <h6 class="title-section-top font-4">Top rated</h6>
           <h2 class="title-section"><span>Recomended</span> Tours</h2>
-          
-          <p style="color: white; padding-top: 20px;">Some of the best tours recommended by us with top notch quality assurance.</p>
+
+          <p style="color: white; padding-top: 20px;">Some of the best tours recommended by us with top notch quality
+            assurance.</p>
         </div>
         <div class="col-md-4"><i class="flaticon-suntour-hotel title-icon"></i></div>
         <div class="cws_divider mb-30 mt-2"></div>
@@ -745,7 +769,9 @@
         <div class="col-md-6">
           <h2 class="title-section-top alt">About</h2>
           <h2 class="title-section alt mb-20"><span class="title-section alt mb-20">NEBUTI</span> Travels</h2>
-          <h5 class="color-white action font-4" style="font-weight:600">One of the best travel companies based in Nepal with over 34 years of experience. We provide you best in class services including Tailormade Tours, Conference Organiser, Incentive Travels, Corporate Travels, Sports Travels, and much more.</h5>
+          <h5 class="color-white action font-4" style="font-weight:600">One of the best travel companies based in Nepal
+            with over 34 years of experience. We provide you best in class services including Tailormade Tours,
+            Conference Organiser, Incentive Travels, Corporate Travels, Sports Travels, and much more.</h5>
           <div class="cws_divider short mb-30 mt-30"></div>
           <h3 class="font-5 color-white font-medium">Nebuti Travels Pvt. Ltd.</h3>
         </div>
@@ -791,7 +817,8 @@
               <div class="portfolio-media"><img src="img/Culture&temples/Swayambhunath.jpg"
                   data-at2x="img/Culture&temples/Swayambhunath.jpg" style="height: 19rem; object-fit: cover;" alt></div>
             </a>
-            <div class="links"><a href="img/Culture&temples/Swayambhunath.jpg" class="fancy"><i class="fa fa-expand"></i></a>
+            <div class="links"><a href="img/Culture&temples/Swayambhunath.jpg" class="fancy"><i
+                  class="fa fa-expand"></i></a>
             </div>
           </div>
         </div>
@@ -822,7 +849,7 @@
           <div class="portfolio-item">
             <!-- portfolio image--><a href="img/Mountain/KIRAN ME30.jpeg" class="fancy">
               <div class="portfolio-media"><img src="img/Mountain/KIRAN ME30.jpeg"
-                data-at2x="img/Mountain/KIRAN ME30.jpeg" style="height: 19rem; object-fit: cover;" alt></div>
+                  data-at2x="img/Mountain/KIRAN ME30.jpeg" style="height: 19rem; object-fit: cover;" alt></div>
             </a>
             <div class="links"><a href="img/Mountain/KIRAN ME30.jpeg" class="fancy"><i class="fa fa-expand"></i></a>
             </div>
@@ -833,7 +860,7 @@
           <div class="portfolio-item">
             <!-- portfolio image--><a href="img/Rafting/DVS111008-28572.jpg" class="fancy">
               <div class="portfolio-media"><img src="img/Rafting/DVS111008-28572.jpg"
-                data-at2x="img/Rafting/DVS111008-28572.jpg" style="height: 19rem; object-fit: cover;" alt></div>
+                  data-at2x="img/Rafting/DVS111008-28572.jpg" style="height: 19rem; object-fit: cover;" alt></div>
             </a>
             <div class="links"><a href="img/Rafting/DVS111008-28572.jpg" class="fancy"><i class="fa fa-expand"></i></a>
             </div>
@@ -844,9 +871,10 @@
           <div class="portfolio-item">
             <!-- portfolio image--><a href="img/UltraLightFlight/IMG_7848.JPG" class="fancy">
               <div class="portfolio-media"><img src="img/UltraLightFlight/IMG_7848.JPG"
-                data-at2x="img/UltraLightFlight/IMG_7848.JPG" style="height: 19rem; object-fit: cover;" alt></div>
+                  data-at2x="img/UltraLightFlight/IMG_7848.JPG" style="height: 19rem; object-fit: cover;" alt></div>
             </a>
-            <div class="links"><a href="img/UltraLightFlight/IMG_7848.JPG" class="fancy"><i class="fa fa-expand"></i></a>
+            <div class="links"><a href="img/UltraLightFlight/IMG_7848.JPG" class="fancy"><i
+                  class="fa fa-expand"></i></a>
             </div>
           </div>
         </div>
@@ -855,7 +883,7 @@
           <div class="portfolio-item">
             <!-- portfolio image--><a href="img/Mountain/KIRAN ME14.jpeg" class="fancy">
               <div class="portfolio-media"><img src="img/Mountain/KIRAN ME14.jpeg"
-                data-at2x="img/Mountain/KIRAN ME14.jpeg" style="height: 19rem; object-fit: cover;" alt></div>
+                  data-at2x="img/Mountain/KIRAN ME14.jpeg" style="height: 19rem; object-fit: cover;" alt></div>
             </a>
             <div class="links"><a href="img/Mountain/KIRAN ME14.jpeg" class="fancy"><i class="fa fa-expand"></i></a>
             </div>
@@ -866,7 +894,7 @@
           <div class="portfolio-item">
             <!-- portfolio image--><a href="img/Mountain/KIRAN ME21.jpeg" class="fancy">
               <div class="portfolio-media"><img src="img/Mountain/KIRAN ME21.jpeg"
-                data-at2x="img/Mountain/KIRAN ME21.jpeg" style="height: 19rem; object-fit: cover;" alt></div>
+                  data-at2x="img/Mountain/KIRAN ME21.jpeg" style="height: 19rem; object-fit: cover;" alt></div>
             </a>
             <div class="links"><a href="img/Mountain/KIRAN ME21.jpeg" class="fancy"><i class="fa fa-expand"></i></a>
             </div>
@@ -906,11 +934,9 @@
           <!-- testimonial item-->
           <div class="testimonial-item">
             <div class="testimonial-top"><a href="hotels-details.html">
-                <div class="pic"><img src="img/prayer_flags.jpg"
-                    alt></div>
+                <div class="pic"><img src="img/prayer_flags.jpg" alt></div>
               </a>
-              <div class="author"> <img src="pic/testimonial/author/1.jpg"
-                  alt></div>
+              <div class="author"> <img src="pic/testimonial/author/1.jpg" alt></div>
             </div>
             <!-- testimonial content-->
             <div class="testimonial-body">
@@ -923,28 +949,24 @@
           <!-- testimonial item-->
           <div class="testimonial-item">
             <div class="testimonial-top"><a href="hotels-details.html">
-                <div class="pic"><img src="img/prayer_flags.jpg"
-                    alt></div>
+                <div class="pic"><img src="img/prayer_flags.jpg" alt></div>
               </a>
-              <div class="author"> <img src="pic/testimonial/author/2.jpg" 
-                  alt></div>
+              <div class="author"> <img src="pic/testimonial/author/2.jpg" alt></div>
             </div>
             <!-- testimonial content-->
             <div class="testimonial-body">
               <h5 class="title"><span>Peter</span> Robertson</h5>
               <div class="stars stars-5"></div>
-              <p class="align-center">One of the most beautiful places ever visited.</p><a
-                href="page-about-us.html" class="testimonial-button">Read more</a>
+              <p class="align-center">One of the most beautiful places ever visited.</p><a href="page-about-us.html"
+                class="testimonial-button">Read more</a>
             </div>
           </div>
           <!-- testimonial item-->
           <div class="testimonial-item">
             <div class="testimonial-top"><a href="hotels-details.html">
-                <div class="pic"><img src="img/prayer_flags.jpg" 
-                    alt></div>
+                <div class="pic"><img src="img/prayer_flags.jpg" alt></div>
               </a>
-              <div class="author"> <img src="pic/testimonial/author/3.jpg" 
-                  alt></div>
+              <div class="author"> <img src="pic/testimonial/author/3.jpg" alt></div>
             </div>
             <!-- testimonial content-->
             <div class="testimonial-body">
@@ -957,11 +979,9 @@
           <!-- testimonial item-->
           <div class="testimonial-item">
             <div class="testimonial-top"><a href="hotels-details.html">
-                <div class="pic"><img src="img/prayer_flags.jpg"
-                    alt></div>
+                <div class="pic"><img src="img/prayer_flags.jpg" alt></div>
               </a>
-              <div class="author"> <img src="pic/testimonial/author/1.jpg"
-                  alt></div>
+              <div class="author"> <img src="pic/testimonial/author/1.jpg" alt></div>
             </div>
             <!-- testimonial content-->
             <div class="testimonial-body">
@@ -982,14 +1002,15 @@
       <div class=" p-5 mb-4">
         <div class="text-center">
           <h2 class="title-section alt-2" style="padding:30px; padding-bottom: 4rem;">Book your tour today!!!</h2>
-          <button id="contact_us_button" type="button" class="btn btn-primary btn-lg" style="background-color: white; color: black;">Contact Us</button>
+          <button id="contact_us_button" type="button" class="btn btn-primary btn-lg"
+            style="background-color: white; color: black;">Contact Us</button>
         </div>
-    
+
       </div>
     </div>
   </section>
 
- 
+
   <!-- ! call out section-->
   </div>
   <!-- footer-->
@@ -999,8 +1020,8 @@
         <!-- widget footer-->
         <div class="col-md-6 col-sm-12 mb-sm-30">
           <div class="logo-soc clearfix">
-            <div class="footer-logo"><a href="index.html"><img src="img/nebutilogo.png"
-                  data-at2x="img/nebutilogo.png" alt height="60rem" width="60rem"></a></div>
+            <div class="footer-logo"><a href="index.html"><img src="img/nebutilogo.png" data-at2x="img/nebutilogo.png"
+                  alt height="60rem" width="60rem"></a></div>
           </div>
           <p class="color-g2 mt-10">
             Serving the best tour services to people since 34 years.
@@ -1042,9 +1063,8 @@
           <div class="col-sm-6">
             <p>© Copyright 2020 <span>NEBUTI</span> &nbsp;&nbsp;|&nbsp;&nbsp; All Rights Reserved</p>
           </div>
-          <div class="col-sm-6 text-right"><a href="index.html" class="footer-nav">Home</a><a
-              href="page-about-us.html" class="footer-nav">Pages</a><a href="page-contact.html"
-              class="footer-nav">Contacts</a></div>
+          <div class="col-sm-6 text-right"><a href="index.html" class="footer-nav">Home</a><a href="page-about-us.html"
+              class="footer-nav">Pages</a><a href="page-contact.html" class="footer-nav">Contacts</a></div>
         </div>
       </div>
     </div>
@@ -1184,6 +1204,15 @@
         autoplaySpeed: 2000,
       });
     });
+
+    function loadPage() {
+      setTimeout(() => {
+        var loader = document.getElementsByClassName('loading');
+        loader[0].style.display = 'none';
+        var htmlEle = document.getElementsByTagName("HTML");
+        htmlEle[0].style.overflow = 'scroll';
+      }, 100);
+    }
   </script>
 </body>
 

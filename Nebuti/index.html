@@ -151,8 +151,8 @@
     }
 
     html {
-      overflow-y: hidden;
       overflow-x: hidden;
+      overflow-y: hidden;
     }
 
     .loading {
@@ -229,10 +229,6 @@
       -webkit-animation: zoom 30s;
       animation: zoom 30s;
 
-    }
-
-    .tp-banner-slider{
-      height: 100vh !important;
     }
   </style>
 
@@ -394,7 +390,6 @@
 
         <div class="slide">
           <img src="img/11.jpg" class="hero-img" />
-          <button>hello</button>
           <h1 style="font-size: 2rem;" class="action font-4">Experience the <br /> Extraordinary</h1>
           
         </div>
@@ -1217,7 +1212,7 @@
         var loader = document.getElementsByClassName('loading');
         loader[0].style.display = 'none';
         var htmlEle = document.getElementsByTagName("HTML");
-        htmlEle[0].style["overflow-y"] = 'scroll';        
+        htmlEle[0].style.overflow = 'scroll';
       }, 100);
     }
   </script>

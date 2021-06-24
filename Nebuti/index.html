@@ -230,6 +230,10 @@
       animation: zoom 30s;
 
     }
+
+    .tp-banner-slider{
+      height: 100vh !important;
+    }
   </style>
 
 </head>
@@ -1232,7 +1236,7 @@
         var loader = document.getElementsByClassName('loading');
         loader[0].style.display = 'none';
         var htmlEle = document.getElementsByTagName("HTML");
-        htmlEle[0].style.overflow = 'scroll';
+        htmlEle[0].style.overflowY = 'scroll';
       }, 100);
     }
   </script>

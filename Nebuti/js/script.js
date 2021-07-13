@@ -1037,9 +1037,8 @@ if ($(".contact-form").length) {
 			values: $(form).serialize()
 		};
 		//send data to server
-		$.post("php/contacts-process.php", data, function(s_response) {
-			s_response = $.parseJSON(s_response);
-			if(s_response.info == 'success'){
+		$.post("https://formsubmit.co/yash.cse314@gmail.com", data, function(s_response) {
+			if(s_response){
 				$wrapper.addClass("message message-success").append('<div role="alert" class="alert alert-success alt alert-dismissible fade in"><button type="button" data-dismiss="alert" aria-label="Close" class="close"></button><i class="alert-icon flaticon-suntour-check"></i><strong>Success!</strong><br>Your message was successfully delivered.</div>');
 				$wrapper.delay(5000).slideUp(300, function(){
 					$(this).removeClass("message message-success").text("").fadeOut(500);
@@ -1047,11 +1046,11 @@ if ($(".contact-form").length) {
 				});
 				$(form)[0].reset();
 			} else {
-				$wrapper.addClass("message message-error").append('<div role="alert" class="alert alert-warning alt alert-dismissible fade in"><button type="button" data-dismiss="alert" aria-label="Close" class="close"></button><i class="alert-icon flaticon-warning"></i><strong>Error!</strong><br>Server fail! Please try again later!</div>');
-				$wrapper.delay(5000).hide(500, function(){
-					$(this).removeClass("message message-success").text("").fadeIn(500);
-					$wrapper.css("display","none");
-				});
+				// $wrapper.addClass("message message-error").append('<div role="alert" class="alert alert-warning alt alert-dismissible fade in"><button type="button" data-dismiss="alert" aria-label="Close" class="close"></button><i class="alert-icon flaticon-warning"></i><strong>Error!</strong><br>Server fail! Please try again later!</div>');
+				// $wrapper.delay(5000).hide(500, function(){
+				// 	$(this).removeClass("message message-success").text("").fadeIn(500);
+				// 	$wrapper.css("display","none");
+				// });
 			}
 		});
 		return false;

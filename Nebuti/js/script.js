@@ -1527,3 +1527,10 @@ function flexslider_init(){
 		sync: "#flex-carousel"
 	});
 }
+
+var footer = new XMLHttpRequest();
+footer.open('GET', '/footer.html');
+footer.onload = function() {
+	document.getElementById("footer").innerHTML = footer.responseText;
+}
+footer.send();

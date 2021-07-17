@@ -648,9 +648,9 @@ h3 span {
 }
 
 section.contact-us.pt-20.pb-20.relative{
-  background-image: url(../img/pink-cream-traditional-oriental-elephant-260nw-238743955.jpg);
-  background-repeat: repeat;
-
+  /* background-image: url(../img/pink-cream-traditional-oriental-elephant-260nw-238743955.jpg);
+  background-repeat: repeat; */
+  background-color: aliceblue;
 }
 
 

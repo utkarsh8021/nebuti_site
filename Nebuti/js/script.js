@@ -1529,7 +1529,7 @@ function flexslider_init(){
 }
 
 var footer = new XMLHttpRequest();
-footer.open('GET', '/footer.html');
+footer.open('GET', 'footer.html');
 footer.onload = function() {
 	document.getElementById("footer").innerHTML = footer.responseText;
 }

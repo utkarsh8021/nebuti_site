@@ -73,7 +73,7 @@
     }
 
     .slick-active {
-      opacity: 1;
+      opacity: 0.7;
     }
 
     .slick-current {
@@ -174,10 +174,14 @@
       margin: auto 1rem;
     }
 
-    .client-image{
+    .client-image {
       max-width: 70%;
     }
 
+    .heropage-btn{
+      width: 90%;
+      margin: 0;
+    }
 
     /* @-webkit-keyframes fadeInUpSD {
     0% {
@@ -318,12 +322,12 @@
           <ul class="clearlist">
             <!-- Item With Sub-->
             <li class="search"><a href="index.html" class="mn-has-sub active">Home</i></a>
-       
+
             </li>
             <!-- End Item With Sub-->
             <li class="slash">&nbsp</li>
-      
-         
+
+
             <li><a href="page-about-us.html" class="mn-has-sub">Destinations <i
                   class="fa fa-angle-down button_open"></i></a>
               <!-- Sub-->
@@ -399,7 +403,6 @@
           <img src="img/11.jpg" class="hero-img" />
           <h1 style="font-size: 2rem;" class="action font-4">Experience the <br /> Extraordinary
             <br>
-            <button type="button" class="btn-change1">Lets Talk</button>
           </h1>
 
         </div>
@@ -408,20 +411,13 @@
           <img src="img/22.jpg" class="hero-img" />
           <h1 style="font-size: 2rem;" class="action font-4">Tailormade Tours with<br />34 Years of Experience
             <br>
-          
-
           </h1>
-          <a href="#">
-            <button type="button" class="btn-change1">Lets Talk</button>
-          </a>
         </div>
 
         <div class="slide">
           <img src="img/33.jpg" class="hero-img" />
           <h1 style="font-size: 2rem;" class="action font-4">We make your <br /> trip Memorable
             <br>
-            <button id="contact_us_button_header" type="button" class="btn btn-primary btn-lg"
-              style="background-color: white; color: black; margin-top: 1rem;">Contact Us</button>
           </h1>
         </div>
 
@@ -429,8 +425,6 @@
           <img src="img/44.jpg" class="hero-img" />
           <h1 style="font-size: 2rem;" class="action font-4">One-Stop Solution for all <br /> your travel needs
             <br>
-            <button id="contact_us_button_header" type="button" class="btn btn-primary btn-lg"
-              style="background-color: white; color: black; margin-top: 1rem;">Contact Us</button>
           </h1>
         </div>
 
@@ -441,25 +435,29 @@
     <div class="carousel-top">
       <section class="slider-nav slider2">
         <div>
-          <p class="action font-3 top-text" style="color: aliceblue;">Kathmandu</p>
+          <!-- <p class="action font-3 top-text" style="color: aliceblue;">Kathmandu</p> -->
+          <button class="btn-change1 heropage-btn" type="button" tabindex="0">Lets Talk</button>
           <img src="img/1.jpg" class="top-img" style="width: 90%;" />
         </div>
         <div>
-          <p class="action font-3 top-text" style="color: aliceblue;">Chitwan</p>
+          <!-- <p class="action font-3 top-text" style="color: aliceblue;">Chitwan</p> -->
+          <button class="btn-change1 heropage-btn" type="button" tabindex="0">Lets Talk</button>
           <img src="img/2.jpg" class="top-img" style="width:90%" />
         </div>
         <div>
-          <p class="action font-3 top-text" style="color: aliceblue;">Pokhra</p>
+          <!-- <p class="action font-3 top-text" style="color: aliceblue;">Pokhra</p> -->
+          <button class="btn-change1 heropage-btn" type="button" tabindex="0">Lets Talk</button>
           <img src="img/3.jpg" class="top-img" style="width: 90%;" />
         </div>
         <div>
-          <p class="action font-3 top-text" style="color: aliceblue;">Mount Everest</p>
+          <!-- <p class="action font-3 top-text" style="color: aliceblue;">Mount Everest</p> -->
+          <button class="btn-change1 heropage-btn" type="button" tabindex="0">Lets Talk</button>
           <img src="img/4.jpg" class="top-img" style="width: 90%;" />
         </div>
       </section>
     </div>
   </div>
-  
+
 
 
 
@@ -635,7 +633,7 @@
           </div>
         </div>
       </section> -->
-  
+
 
 
   <!-- counter section -->
@@ -679,9 +677,9 @@
       </div>
     </div>
   </section>
- <!-- counter section ends -->
+  <!-- counter section ends -->
 
- <!-- recommended tours -->
+  <!-- recommended tours -->
   <section class="small-section bg-gray">
     <div class="container">
       <div class="row">
@@ -690,10 +688,10 @@
           <h2 class="title-section"><span>Recommended</span> Tours</h2>
           <p style="color: white;">Some of the best tours recommended by us with top notch quality
             assurance.</p>
-          </div>
-          <div class="col-md-6"><i class="flaticon-suntour-world title-icon"></i></div>
-           </div>
-      <hr>  
+        </div>
+        <div class="col-md-6"><i class="flaticon-suntour-world title-icon"></i></div>
+      </div>
+      <hr>
       <div class="row">
         <div class="col-md-6">
           <div class="recom-item">
@@ -791,9 +789,9 @@
   </section>
   <!-- ! recomended section-->
 
-   <!-- company logos -->
-   <section class="bg-gray-2">
-    <div class="container"  style="padding: 30px;">
+  <!-- company logos -->
+  <section class="bg-gray-2">
+    <div class="container" style="padding: 30px;">
       <div class="row">
         <div class="col-md-12">
           <h4 style="color: rgb(177, 175, 175);font-weight: 100;">We work together with pride</h4>
@@ -819,67 +817,68 @@
   </section>
   <!-- company logos end -->
 
-    <!-- Business conferences -->
-    <section class="small-section" style="background-image: url(img/aalok-atreya-MZTafV3sHQo-unsplash.jpg); background-size: cover;">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <h2 class="title-section"><span>Business Tours and more</span></h2>
-            <p style="color: white;">Incentive travels, conferences, business tours and social functions. We are
-something more than usual.</p>
-          </div>
-          <div class="col-md-4"><i class="flaticon-suntour-hotel title-icon"></i></div>
+  <!-- Business conferences -->
+  <section class="small-section"
+    style="background-image: url(img/aalok-atreya-MZTafV3sHQo-unsplash.jpg); background-size: cover;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h2 class="title-section"><span>Business Tours and more</span></h2>
+          <p style="color: white;">Incentive travels, conferences, business tours and social functions. We are
+            something more than usual.</p>
         </div>
-        <hr>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="recom-item">
-              <div class="recom-media"><a href="rec-tour-details1.html">
-                  <div class="pic" style="height: 16rem;"><img src="pic/recomended/Nagarkot.png"
-                      data-at2x="pic/recomended/Nagarkot.png" alt width="700"></div>
-                </a>
-                <div class="location"></div>
-              </div>
-              <!-- Recomended Content-->
-              <div class="recom-item-body"><a href="rec-tour-details1.html">
-                  <h6 class="blog-title">Conferences</h6>
-                </a>
-                <div class="stars stars-4" style="visibility: hidden;"></div>
-                <p class="mb-30">Nebuti believe in taking meetings to the next level by providing State of the Art visual
-                  and Audion equipment for smooth proceedings
-                  .
-                </p><a href="rec-tour-details1.html" class="recom-button">Read more</a>
-                <!-- <a href="rec-tour-details1.html" class="cws-button small alt">Book now</a> -->
-                <div></div>
-              </div>
-              <!-- Recomended Image-->
+        <div class="col-md-4"><i class="flaticon-suntour-hotel title-icon"></i></div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="recom-item">
+            <div class="recom-media"><a href="rec-tour-details1.html">
+                <div class="pic" style="height: 16rem;"><img src="pic/recomended/Nagarkot.png"
+                    data-at2x="pic/recomended/Nagarkot.png" alt width="700"></div>
+              </a>
+              <div class="location"></div>
             </div>
+            <!-- Recomended Content-->
+            <div class="recom-item-body"><a href="rec-tour-details1.html">
+                <h6 class="blog-title">Conferences</h6>
+              </a>
+              <div class="stars stars-4" style="visibility: hidden;"></div>
+              <p class="mb-30">Nebuti believe in taking meetings to the next level by providing State of the Art visual
+                and Audion equipment for smooth proceedings
+                .
+              </p><a href="rec-tour-details1.html" class="recom-button">Read more</a>
+              <!-- <a href="rec-tour-details1.html" class="cws-button small alt">Book now</a> -->
+              <div></div>
+            </div>
+            <!-- Recomended Image-->
           </div>
-          <div class="col-md-6">
-            <div class="recom-item">
-              <div class="recom-media"><a href="rec-tour-details2.html">
-                  <div class="pic" style="height: 16rem;"><img src="pic/recomended/pokhara.png"
-                      data-at2x="pic/recomended/pokhara.png" alt width="700">
-                  </div>
-                </a>
-                <div class="location"></div>
-              </div>
-              <!-- Recomended Content-->
-              <div class="recom-item-body"><a href="rec-tour-details2.html">
-                  <h6 class="blog-title">Business Tours</h6>
-                </a>
-                <div class="stars stars-4" style="visibility: hidden;"></div>
-                <p class="mb-30">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p><a
-                  href="rec-tour-details2.html" class="recom-button">Read more</a>
-                <div></div>
-              </div>
-              <!-- Recomended Image-->
+        </div>
+        <div class="col-md-6">
+          <div class="recom-item">
+            <div class="recom-media"><a href="rec-tour-details2.html">
+                <div class="pic" style="height: 16rem;"><img src="pic/recomended/pokhara.png"
+                    data-at2x="pic/recomended/pokhara.png" alt width="700">
+                </div>
+              </a>
+              <div class="location"></div>
             </div>
+            <!-- Recomended Content-->
+            <div class="recom-item-body"><a href="rec-tour-details2.html">
+                <h6 class="blog-title">Business Tours</h6>
+              </a>
+              <div class="stars stars-4" style="visibility: hidden;"></div>
+              <p class="mb-30">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p><a
+                href="rec-tour-details2.html" class="recom-button">Read more</a>
+              <div></div>
+            </div>
+            <!-- Recomended Image-->
           </div>
         </div>
       </div>
-    </section>
-    <!-- ! Business conferences -->
+    </div>
+  </section>
+  <!-- ! Business conferences -->
 
 
   <!-- about nebuti-->
@@ -1050,62 +1049,62 @@ something more than usual.</p>
         </div>
       </div>
       <div class="row"> -->
-        <!-- testimonial carousel-->
-        <!-- <div class="owl-three-item"> -->
-          <!-- testimonial item-->
-          <!-- <div class="testimonial-item">
+  <!-- testimonial carousel-->
+  <!-- <div class="owl-three-item"> -->
+  <!-- testimonial item-->
+  <!-- <div class="testimonial-item">
             <div class="testimonial-top"><a href="hotels-details.html">
                 <div class="pic"><img src="img/prayer_flags.jpg" alt></div>
               </a>
               <div class="author"> <img src="pic/testimonial/author/1.jpg" alt></div>
             </div> -->
-            <!-- testimonial content-->
-            <!-- <div class="testimonial-body">
+  <!-- testimonial content-->
+  <!-- <div class="testimonial-body">
               <h5 class="title"><span>Nicole</span> Beck</h5>
               <div class="stars stars-5"></div>
               <p class="align-center">Had a wonderful experience throughout the entire tour.</p><a
                 href="page-about-us.html" class="testimonial-button">Read more</a>
             </div>
           </div> -->
-          <!-- testimonial item-->
-          <!-- <div class="testimonial-item">
+  <!-- testimonial item-->
+  <!-- <div class="testimonial-item">
             <div class="testimonial-top"><a href="hotels-details.html">
                 <div class="pic"><img src="img/prayer_flags.jpg" alt></div>
               </a>
               <div class="author"> <img src="pic/testimonial/author/2.jpg" alt></div>
             </div> -->
-            <!-- testimonial content -->
-            <!-- <div class="testimonial-body">
+  <!-- testimonial content -->
+  <!-- <div class="testimonial-body">
               <h5 class="title"><span>Peter</span> Robertson</h5>
               <div class="stars stars-5"></div>
               <p class="align-center">One of the most beautiful places ever visited.</p><a href="page-about-us.html"
                 class="testimonial-button">Read more</a>
             </div>
           </div> -->
-          <!-- testimonial item-->
-          <!-- <div class="testimonial-item">
+  <!-- testimonial item-->
+  <!-- <div class="testimonial-item">
             <div class="testimonial-top"><a href="hotels-details.html">
                 <div class="pic"><img src="img/prayer_flags.jpg" alt></div>
               </a>
               <div class="author"> <img src="pic/testimonial/author/3.jpg" alt></div>
             </div> -->
-            <!-- testimonial content-->
-            <!-- <div class="testimonial-body">
+  <!-- testimonial content-->
+  <!-- <div class="testimonial-body">
               <h5 class="title"><span>Kathy</span> Harrison</h5>
               <div class="stars stars-5"></div>
               <p class="align-center">Great experience and a quality tour. Thanks Nebuti.</p><a
                 href="page-about-us.html" class="testimonial-button">Read more</a>
             </div>
           </div> -->
-          <!-- testimonial item-->
-          <!-- <div class="testimonial-item">
+  <!-- testimonial item-->
+  <!-- <div class="testimonial-item">
             <div class="testimonial-top"><a href="hotels-details.html">
                 <div class="pic"><img src="img/prayer_flags.jpg" alt></div>
               </a>
               <div class="author"> <img src="pic/testimonial/author/1.jpg" alt></div>
             </div> -->
-            <!-- testimonial content-->
-            <!-- <div class="testimonial-body">
+  <!-- testimonial content-->
+  <!-- <div class="testimonial-body">
               <h5 class="title"><span>Nicole</span> Beck</h5>
               <div class="stars stars-5"></div>
               <p class="align-center">Best travel company in Nepal with professional people.</p><a
@@ -1122,7 +1121,8 @@ something more than usual.</p>
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
-          <h2 class="title-section alt-2" style="padding:30px; padding-bottom: 2rem; color: #2c2c2c;">Book your tour today!!!</h2>
+          <h2 class="title-section alt-2" style="padding:30px; padding-bottom: 2rem; color: #2c2c2c;">Book your tour
+            today!!!</h2>
           <button type="button" class="btn-change1">Lets Talk</button>
         </div>
       </div>

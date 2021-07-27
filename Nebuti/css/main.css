@@ -1170,7 +1170,7 @@ hr.short {
 }
 
 .nav-logo-wrap .logo img {
-  max-height: 100%;
+  max-height: 90%;
   display: inline-block;
   margin: 0 auto;
 }
@@ -1387,7 +1387,7 @@ header .transparent .inner-nav > ul > li > a:hover {
   font-family: "Hind Siliguri", sans-serif;
   font-size: 13px;
   font-weight: 600;
-  color: #a9b5c1;
+  color: rgb(39, 39, 39);
   display: inline-block;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1410,7 +1410,7 @@ header .transparent .inner-nav > ul > li > a:hover {
 
 .inner-nav:not(.mobile_nav) > ul > li > a:hover,
 .inner-nav > ul > li > a.active {
-  color: #424d58 !important;
+  color:  #2ebf91 !important;
   text-decoration: none;
 }
 
@@ -1423,7 +1423,7 @@ header .transparent .inner-nav > ul > li > a:hover {
   bottom: 0;
   left: -30px;
   width: 100px;
-  height: 2px;
+  height: 4px;
   background: #59abae;
   float: none;
   padding: 0;
@@ -1543,7 +1543,7 @@ header .transparent .inner-nav > ul > li > a:hover {
   height: 100%;
   top: 0;
   right: -15%;
-  background: #59abae;
+  /* background: #59abae; */
   -webkit-transform: skew(-15deg);
   -moz-transform: skew(-15deg);
   -ms-transform: skew(-15deg);
@@ -1552,7 +1552,7 @@ header .transparent .inner-nav > ul > li > a:hover {
 }
 
 .main-nav li.search a {
-  color: #ffffff;
+  color: black;
 }
 
 .main-nav li.search li {
@@ -1663,7 +1663,7 @@ header .transparent .inner-nav > ul > li > a:hover {
 }
 
 .main-nav li.search .close-button span {
-  color: #59abae;
+  color: #8360c3;
   z-index: 1;
   position: relative;
   vertical-align: middle;
@@ -1711,7 +1711,7 @@ header .main-nav.transparent li.search:after {
   /* width: 100%; */
   height: 100%;
   top: 0;
-  background: #59abae;
+  background: #8360c3;
 }
 
 header .transparent .inner-nav:after {
@@ -1747,7 +1747,7 @@ header .transparent .inner-nav:after {
 }
 
 .main-nav.transparent .search li .close-button:hover {
-  color: #59abae;
+  color: #8360c3;
 }
 
 .main-nav.transparent .search .form-control {
@@ -1798,7 +1798,7 @@ header .transparent .inner-nav:after {
 
 .mn-sub li:hover > a,
 .mn-sub li.active > a {
-  color: #59abae !important;
+  color:  #2ebf91 !important;
 }
 
 .mn-sub li:hover > .button_open,
@@ -1844,7 +1844,7 @@ header .transparent .inner-nav:after {
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  color: #59abae;
+  color: #8360c3;
   font-size: 12px;
 }
 
@@ -2440,10 +2440,10 @@ nav .inner-nav.mobile_nav.opened ul {
 /* Site top panel */
 /*  */
 .site-top-panel {
-  background: #45505c;
+  background:  #2ebf91;
   height: 62px;
   line-height: 60px;
-  border-top: 2px solid #59abae;
+
 }
 
 .site-top-panel .top-left-wrap {
@@ -2457,7 +2457,7 @@ nav .inner-nav.mobile_nav.opened ul {
 
 .site-top-panel .top-left-wrap a {
   font-style: italic;
-  color: #939ea9;
+  color: white;
 }
 
 .site-top-panel .top-left-wrap a i {

@@ -1376,7 +1376,7 @@ header .transparent .inner-nav > ul > li > a:hover {
 .inner-nav > ul > li.slash {
   float: left;
   line-height: 80px;
-  color: #59abae;
+  color: #dddddd;
 }
 
 .inner-nav.mobile_nav > ul > li.slash {
@@ -2470,7 +2470,7 @@ nav .inner-nav.mobile_nav.opened ul {
 
 .site-top-panel .top-left-wrap span {
   margin: 0 25px;
-  color: #59abae;
+  color: #2ebf91;
 }
 
 .site-top-panel .top-right-wrap {

@@ -1534,3 +1534,10 @@ footer.onload = function() {
 	document.getElementById("footer").innerHTML = footer.responseText;
 }
 footer.send();
+
+// var header = new XMLHttpRequest();
+// header.open('GET', 'header.html');
+// header.onload = function() {
+// 	document.getElementById("header").innerHTML = header.responseText;
+// }
+// header.send();

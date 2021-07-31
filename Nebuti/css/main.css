@@ -12011,6 +12011,8 @@ td.ui-datepicker-today:before {
   margin-bottom: 30px;
   padding: 0 15px;
   background: #ffffff;
+  color: black;
+  font-weight: 600;
 }
 
 .contact-form input:not(.cws-button):focus,

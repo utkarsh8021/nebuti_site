@@ -2618,7 +2618,7 @@ nav .inner-nav.mobile_nav.opened ul {
 
 @media (max-width: 767px) {
   .site-top-panel {
-    height: 35px;
+    height: 40px;
     line-height: 35px;
   }
 
@@ -16012,7 +16012,7 @@ p.error:before {
   }
 
   .site-top-panel .top-left-wrap {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .site-top-panel .top-left-wrap span {

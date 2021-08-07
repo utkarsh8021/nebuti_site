@@ -2618,7 +2618,7 @@ nav .inner-nav.mobile_nav.opened ul {
 
 @media (max-width: 767px) {
   .site-top-panel {
-    height: 70px;
+    height: 35px;
     line-height: 35px;
   }
 
@@ -6390,12 +6390,21 @@ nav .inner-nav.mobile_nav.opened ul {
     span {
     font-size: 10px;
   }
+
+  .hide-icon-mobile{
+    display:hidden;
+  }
 }
 
 @media (max-width: 560px) {
   .features-tours-full-width .features-tours-wrap .features-tours-item {
     width: 100%;
   }
+
+  .hide-icon-mobile{
+    display:none;
+  }
+
 }
 
 /*  */
@@ -6628,6 +6637,12 @@ nav .inner-nav.mobile_nav.opened ul {
 }
 
 @media (max-width: 560px) {
+
+  .hide-icon-mobile{
+    display:none;
+  }
+  
+
   .recom-item .recom-item-body {
     padding: 15px 0 0 15px;
   }
@@ -6917,6 +6932,12 @@ body .tparrows {
 }
 
 @media (max-width: 600px) {
+
+  .hide-icon-mobile{
+    display:none;
+  }
+  
+
   .tp-caption p,
   .tp-caption .cws-button {
     display: none;

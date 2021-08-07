@@ -6936,6 +6936,17 @@ body .tparrows {
   .hide-icon-mobile{
     display:none;
   }
+
+  .client-logo-parent{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  }
+
+  .client-logo{
+    padding: 25px;
+  }
   
 
   .tp-caption p,

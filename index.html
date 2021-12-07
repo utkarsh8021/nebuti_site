@@ -89,21 +89,10 @@
                                         <li><a href="#">placeholder</a></li>
                                     </ul>
                                 </li>
-                                <li class="mn-sub-multi">
-                                    <a class="mn-group-title">Highly Rated</a>
-                                    <ul>
-                                        <li><a href="#">Placeholder</a></li>
-                                        <li><a href="#">Four Columns</a></li>
-                                        <li><a href="#">Portfolio Masonry</a></li>
-                                        <li><a href="#">With Sidebar</a></li>
-                                        <li><a href="#">Gallery</a></li>
-                                        <li><a href="#">Portfolio Single</a></li>
-                                    </ul>
-                                </li>
                             </ul>
                             <!-- End Sub-->
                         </li>
-                        <li><a href="#" >Achievements</a></li>
+                        <li><a href="#">Achievements</a></li>
                         <li class="search" id="menu-item-18">
                             <button class="btn-change1" onclick="location.href='page-contact.html';" style="height: 2.3rem; margin: 1.5rem auto; border-radius: 0.3em; width:8rem">Contact Us
                             </button>
@@ -447,7 +436,8 @@
                 </div>
                 <div class="col-md-6">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <div class="embed-video embed-responsive-item" data-id="f3GaWoDfWvs" data-autoplay="1" width="100%" height="100%"></div>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/f3GaWoDfWvs" loading="lazy" allowfullscreen>
+                        </iframe>
                     </div>
                 </div>
             </div>
@@ -726,7 +716,6 @@
     <script type="text/javascript" src="js/jquery.tweet.js"></script>
     <!-- <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script> -->
     <script type="text/javascript" src="js/jquery.flexslider.js"></script>
-    <script type="text/javascript" src="js/jquery.embedVideo.min.js"></script>
 
     <!-- <script type="text/javascript" src="tuner/js/colorpicker.js"></script>
     <script type="text/javascript" src="tuner/js/scripts.js"></script> -->
@@ -774,23 +763,6 @@
                 var htmlEle = document.getElementsByTagName("HTML");
                 htmlEle[0].style.overflowY = 'scroll';
             }, 100);
-        }
-
-        function onYouTubeIframeAPIReady() {
-            $('.embed-video').embedVideo({
-                enablejsapi: 1,
-                callback: function(iframe) {
-                    player = new YT.Player(iframe, {
-                        events: {
-                            'onReady': function() {
-                                if (!$(iframe).parent().data('autoplay')) {
-                                    player.playVideo();
-                                }
-                            }
-                        }
-                    });
-                }
-            });
         }
     </script>
 </body>

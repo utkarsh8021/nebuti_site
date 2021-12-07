@@ -29,8 +29,7 @@ $(document).ready(function () {
   filter_init();
   gridList_init();
   popup_login_init();
-  magicline_init();
-  magicline_main_init();
+ 
   footer_height();
   search_form_height();
   search_form_click();
@@ -88,10 +87,6 @@ function cws_touch_events_fix() {
       jQuery(this).on("click", function (e) {
         e.preventDefault();
       });
-    });
-    jQuery(".work-filter ul.magic-line li a").on("mouseenter", function (e) {
-      e.preventDefault();
-      jQuery(this).trigger("click");
     });
   }
 }
@@ -1491,50 +1486,11 @@ function popup_login_init() {
 
 // Magic line
 
-function magicline_init() {
-  var $el, leftPos, newWidth;
 
-  if (!$(".inner-nav").hasClass("mobile_nav")) {
-    $("header .inner-nav > ul").addClass("magic-line-main");
-    $("header .magic-line-main").append("<li class='magic-line-main-li'></li>");
-
-    if ($("header .inner-nav > ul > li > *").hasClass("active")) {
-      $("header .inner-nav > ul > li > *.active")
-        .parent("li")
-        .addClass("active-li");
-    }
-
-    var $magicLine = $(".magic-line-main-li");
-
-    $magicLine
-      .width($(".active-li").width())
-      .css("left", $(".active-li").position().left)
-      .data("origLeft", $magicLine.position().left)
-      .data("origWidth", $magicLine.width());
-
-    $(".magic-line-main > li:not(.slash)").on({
-      mouseenter: function () {
-        $el = $(this);
-        leftPos = $el.position().left;
-        newWidth = $el.width();
-        $magicLine.stop().animate({
-          left: leftPos,
-          width: newWidth,
-        });
-      },
-      mouseleave: function () {
-        $magicLine.stop().animate({
-          left: $magicLine.data("origLeft"),
-          width: $magicLine.data("origWidth"),
-        });
-      },
-    });
-  }
-}
 
 // Magic line main
 
-function magicline_main_init() {}
+
 
 // footer fixed
 function footer_height() {

@@ -1402,29 +1402,7 @@ header .transparent .inner-nav>ul>li>a:hover {
     color: #59abae !important;
 }
 
-.magic-line-main .magic-line-main-li {
-    position: absolute;
-    bottom: 0;
-    left: -30px;
-    width: 100px;
-    height: 4px;
-    background: #59abae;
-    float: none;
-    padding: 0;
-    margin-left: 10px;
-    -webkit-transition: background 0.5s;
-    -moz-transition: background 0.5s;
-    -o-transition: background 0.5s;
-    transition: background 0.5s;
-}
 
-.magic-line-main li.search:hover+.magic-line-main-li {
-    background: #ffffff;
-}
-
-.mobile_nav .magic-line-main .magic-line-main-li {
-    display: none;
-}
 
 
 /*  */

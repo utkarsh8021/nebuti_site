@@ -8014,6 +8014,7 @@ aside .owl-single-item .pic img {
     background: #8360c3;
     margin: 10px;
     border: 10px;
+    border-radius: 4px;
     color: #fff;
     box-shadow: 0 0 1px #ccc;
     -webkit-transition-duration: 0.3s;

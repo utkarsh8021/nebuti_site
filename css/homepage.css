@@ -215,3 +215,12 @@ img.hero-img {
     margin-left: -1px;
     margin-right: auto;
 }
+
+.query-form {
+    z-index: 10000;
+    width: 30rem;
+    text-align: center;
+    overflow: hidden;
+    border: 2px solid #2EBF91;
+    margin: 5rem auto;
+}

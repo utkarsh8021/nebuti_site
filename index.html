@@ -92,9 +92,14 @@
                             </ul>
                             <!-- End Sub-->
                         </li>
+                        <li>
+                            <a href="packages.html">Packages</a>
+                        </li>
                         <li><a href="#">Achievements</a></li>
+                        <li><a href="page-contact.html">Contact Us</a></li>
                         <li class="search" id="menu-item-18">
-                            <button class="btn-change1" onclick="location.href='page-contact.html';" style="height: 2.3rem; margin: 1.5rem auto; border-radius: 0.3em; width:8rem">Contact Us
+                            <button class="btn-change1" data-toggle="modal" data-target="#myModal" style="height: 2.3rem; margin: 1.5rem auto; border-radius: 0.3em; width:8rem">
+                                Raise a query
                             </button>
                         </li>
                         <!-- End Item-->
@@ -138,28 +143,28 @@
         <div class="carousel-top">
             <section class="slider-nav slider2">
                 <div>
-                    <a href="https://www.google.com">
+                    <a href="kathmandu-tours.html">
                         <button class="btn-change2 heropage-btn" type="button" tabindex="0">Katmandu<i
                                 class="fa fa-fw fa-angle-right" aria-hidden="true"></i></button>
                         <img src="img/1.jpg" class="top-img" style="width: 90%;" />
                     </a>
                 </div>
                 <div>
-                    <a href="www.google.com">
+                    <a href="chitwan-tours.html">
                         <button class="btn-change2 heropage-btn" type="button" tabindex="0">Chitwan<i
                                 class="fa fa-fw fa-angle-right" aria-hidden="true"></i></button>
                         <img src="img/rhino.jpg" class="top-img" style="width:90%" />
                     </a>
                 </div>
                 <div>
-                    <a href="www.google.com">
+                    <a href="pokhara-tours.html">
                         <button class="btn-change2 heropage-btn" type="button" tabindex="0">Pokhara<i
                                 class="fa fa-fw fa-angle-right" aria-hidden="true"></i></button>
                         <img src="img/3.jpg" class="top-img" style="width: 90%;" />
                     </a>
                 </div>
                 <div>
-                    <a href="www.google.com">
+                    <a href="everest-tours.html">
                         <button class="btn-change2 heropage-btn" type="button" tabindex="0">Mt. Everest<i
                                 class="fa fa-fw fa-angle-right" aria-hidden="true"></i></button>
                         <img src="img/4.jpg" class="top-img" style="width: 90%;" />
@@ -679,6 +684,83 @@
         </div>
     </section>
     <!-- ! call out section-->
+    </div>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="row">
+                        <h5 class="modal-title">Submit your query</h5>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <form method="post" action="https://formsubmit.co/yash.cse314@gmail.com" class="form contact-form alt clearfix">
+                        <input type="hidden" name="_next" value="/page-contact.html" />
+                        <input type="hidden" name="_captcha" value="false" />
+                        <input type="hidden" name="_template" value="table" />
+                        <div class="row">
+                            <div class="col-md-4 col-xs-6">
+                                <div class="input-container">
+                                    <input type="text" name="name" value="" placeholder="Name*" aria-invalid="false" aria-required="true" class="form-row form-row-first">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-6">
+                                <div class="input-container">
+                                    <input type="text" name="email" value="" placeholder="Email*" aria-required="true" class="form-row form-row-last">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <div class="input-container">
+                                    <input type="text" name="nationality" value="" placeholder="Nationality*" aria-required="true" class="form-row form-row-last">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-xs-6">
+                                <div class="input-container">
+                                    <input type="text" name="phone" value="" placeholder="Contact No." aria-required="false" class="form-row form-row-last">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-6">
+                                <div class="input-container">
+                                    <input type="text" name="persons" value="" placeholder="No. of individuals" aria-invalid="false" aria-required="true" class="form-row form-row-first">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <div class="input-container">
+                                    <input type="text" name="hotel category" value="" placeholder="Hotel Category" aria-required="true" class="form-row form-row-last">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6">
+                                <div class="input-container">
+                                    <input type="date" name="travel date" value="" placeholder="Tentative travel date" aria-invalid="false" aria-required="true" class="form-row form-row-first">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-6">
+                                <div class="input-container">
+                                    <input type="text" name="days" value="" placeholder="No. of Days/Nights" aria-required="true" class="form-row form-row-last">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="input-container">
+                                    <textarea name="Requirements" cols="40" rows="2" placeholder="Any specific requirements?" aria-invalid="false" aria-required="true"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        </br>
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn-change1">SUBMIT</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- footer-->
     <div id="footer"></div>

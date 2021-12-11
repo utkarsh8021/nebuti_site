@@ -46,7 +46,8 @@
                         <div class="top-left-wrap font-3">
                             <div class="mail-top">
                                 <a href="mailto:info@nebuti.com"> <i class="fa fa-envelope" aria-hidden="true"></i>info@nebuti.com</a>
-                            </div><span>/</span>
+                            </div>
+                            <span>/</span>
                             <div class="tel-top">
                                 <a href="tel:+977-1-4422833"> <i class="fa fa-phone" aria-hidden="true"></i>+977-1-4422833</a>
                             </div>
@@ -67,15 +68,17 @@
                 <div class="inner-nav desktop-nav">
                     <ul class="clearlist">
                         <!-- Item With Sub-->
-                        <li class="search"><a href="index.html" class="mn-has-sub active">Home</i></a>
+                        <li><a href="index.html" class="active">Home</i></a>
                         </li>
                         <!-- End Item With Sub-->
-                        <li><a href="#" class="mn-has-sub">Destinations <i class="fa fa-angle-down button_open"></i></a>
+                        <li>
+                            <a href="#" class="mn-has-sub">Destinations <i class="fa fa-angle-down button_open"></i></a>
                             <!-- Sub-->
                             <ul class="mn-sub mn-has-multi">
-                                <li class="mn-sub-multi"><a class="mn-group-title">Most Visited</a>
+                                <li class="mn-sub-multi">
+                                    <a class="mn-group-title">Most Visited</a>
                                     <ul class="mn-sub-multi">
-                                        <li><a href="#">Kathmandu</a></li>
+                                        <li><a href="kathmandu-tours.html">Kathmandu</a></li>
                                         <li><a href="#">Pokhara</a></li>
                                         <li><a href="#">Everest</a></li>
                                         <li><a href="#">Placeholder</a></li>
@@ -83,23 +86,18 @@
                                         <li><a href="#">placeholder</a></li>
                                     </ul>
                                 </li>
-                                <li class="mn-sub-multi"><a class="mn-group-title">Highly Rated</a>
-                                    <ul>
-                                        <li><a href="#">Placeholder</a></li>
-                                        <li><a href="#">Four Columns</a></li>
-                                        <li><a href="#">Portfolio Masonry</a></li>
-                                        <li><a href="#">With Sidebar</a></li>
-                                        <li><a href="#">Gallery</a></li>
-                                        <li><a href="#">Portfolio Single</a></li>
-                                    </ul>
-                                </li>
                             </ul>
                             <!-- End Sub-->
                         </li>
+                        <li>
+                            <a href="packages.html">Packages</a>
+                        </li>
                         <li><a href="#">Achievements</a></li>
+                        <li><a href="page-contact.html">Contact Us</a></li>
                         <li class="search" id="menu-item-18">
-                            <button class="btn-change1" onclick="location.href='page-contact.html';" style="height: 2.3rem; margin: 1.5rem auto; border-radius: 0.3em; width:8rem">Contact Us
-              </button>
+                            <button class="btn-change1" data-toggle="modal" data-target="#myModal" style="height: 2.3rem; margin: 1.5rem auto; border-radius: 0.3em; width:8rem">
+                                Raise a query
+                            </button>
                         </li>
                         <!-- End Item-->
                     </ul>
@@ -173,21 +171,21 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="input-container">
-                                    <input type="text" name="phone" value="" placeholder="Phone Number (with country code)*" aria-required="false" class="form-row form-row-last">
+                                    <input type="text" name="phone" value="" placeholder="Phone Number (with country code)" aria-required="false" class="form-row form-row-last">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="input-container">
-                                    <textarea name="message" cols="40" rows="4" placeholder="What you want to talk about?*" aria-invalid="false" aria-required="true"></textarea>
+                                    <textarea name="message" cols="40" rows="4" placeholder="Please type your queries?*" aria-invalid="false" aria-required="true"></textarea>
                                 </div>
                             </div>
                         </div>
                         </br>
                         <div class="row">
                             <div class="col-md-12 text-center">
-                                <button type="submit" class="btn-change3">SUBMIT</button>
+                                <button type="submit" class="btn-change1">SUBMIT</button>
                             </div>
                         </div>
                     </form>
@@ -198,6 +196,83 @@
         </div>
     </div>
     <!-- ! content-->
+    <!-- form -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Submit your query</h5>
+                </div>
+                <div class="modal-body">
+                    <form method="post" action="https://formsubmit.co/yash.cse314@gmail.com" class="form contact-form alt clearfix">
+                        <input type="hidden" name="_next" value="/page-contact.html" />
+                        <input type="hidden" name="_captcha" value="false" />
+                        <input type="hidden" name="_template" value="table" />
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="input-container">
+                                    <input type="text" name="name" value="" placeholder="Name*" aria-invalid="false" aria-required="true" class="form-row form-row-first">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-container">
+                                    <input type="text" name="email" value="" placeholder="Email*" aria-required="true" class="form-row form-row-last">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-container">
+                                    <input type="text" name="nationality" value="" placeholder="Nationality*" aria-required="true" class="form-row form-row-last">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="input-container">
+                                    <input type="text" name="phone" value="" placeholder="Contact No." aria-required="false" class="form-row form-row-last">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-container">
+                                    <input type="text" name="persons" value="" placeholder="No. of individuals" aria-invalid="false" aria-required="true" class="form-row form-row-first">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-container">
+                                    <input type="text" name="hotel category" value="" placeholder="Hotel Category" aria-required="true" class="form-row form-row-last">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="input-container">
+                                    <input type="date" name="travel date" value="" placeholder="Tentative travel date" aria-invalid="false" aria-required="true" class="form-row form-row-first">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-container">
+                                    <input type="text" name="days" value="" placeholder="No. of Days/Nights" aria-required="true" class="form-row form-row-last">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="input-container">
+                                    <textarea name="Requirements" cols="40" rows="2" placeholder="Any specific requirements?" aria-invalid="false" aria-required="true"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        </br>
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn-change1">SUBMIT</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- form end -->
     <!-- footer-->
     <div id="footer"></div>
     <div id="scroll-top"><i class="fa fa-angle-up"></i></div>

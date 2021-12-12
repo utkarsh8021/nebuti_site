@@ -1636,9 +1636,20 @@ footer.onload = function() {
 };
 footer.send();
 
+var queryForm = new XMLHttpRequest();
+queryForm.open("GET", "query-form.html");
+queryForm.onload = function() {
+    document.getElementById("myModal").innerHTML = queryForm.responseText;
+};
+queryForm.send();
+
 // var header = new XMLHttpRequest();
 // header.open('GET', 'header.html');
 // header.onload = function() {
 // 	document.getElementById("header").innerHTML = header.responseText;
 // }
 // header.send();
+
+function closeModal() {
+    $('#myModal').modal('toggle');
+}

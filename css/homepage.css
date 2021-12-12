@@ -62,7 +62,7 @@
 
 .carousel-top {
     width: 100%;
-    height: 100%;
+    height: 65%;
     position: absolute;
     top: 35%;
     left: 0;
@@ -209,11 +209,6 @@ img.hero-img {
 
 .tp-banner-slider {
     height: 100vh !important;
-}
-
-.row {
-    margin-left: -1px;
-    margin-right: auto;
 }
 
 .query-form {

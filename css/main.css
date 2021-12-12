@@ -1403,8 +1403,6 @@ header .transparent .inner-nav>ul>li>a:hover {
 }
 
 
-
-
 /*  */
 
 
@@ -8067,13 +8065,11 @@ aside .owl-single-item .pic img {
     border: 10px;
     border-color: #8360c3;
     margin: 10px;
-    
     border-radius: 4px;
     color: #8360c3;
     box-shadow: 0 0 1px #ccc;
     -webkit-transition-duration: 0.3s;
     -webkit-box-shadow: 0px 0px 0 0 #2ebf91 inset, 0px 0px 0 0 #2ebf91 inset;
-
 }
 
 .btn-change4:hover {
@@ -15125,4 +15121,19 @@ p.error:before {
         -o-transform: translateX(-20%);
         transform: translateX(-20%);
     }
+}
+
+.row {
+    margin-left: -1px;
+    margin-right: auto;
+}
+
+.close-button {
+    background-color: transparent;
+    border: none;
+    color: black
+}
+
+.close-button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
 }

@@ -1,5 +1,3 @@
-"use strict"; // start of use strict
-
 $(document).ready(function() {
     scroll_top();
     sticky_init();
@@ -1070,100 +1068,6 @@ if ($(".woocommerce-checkout").length) {
     });
 }
 
-if ($(".contact-form").length) {
-    /**/
-    /* contact form */
-    /**/
-
-    /* validate the contact form fields */
-    $(".contact-form").each(function() {
-        $(this).validate(
-            /*feedback-form*/
-            {
-                onkeyup: false,
-                onfocusout: false,
-                errorElement: "p",
-                errorLabelContainer: $(this)
-                    .parent()
-                    .children(".alert.alert-danger")
-                    .children(".message"),
-                rules: {
-                    name: { required: true },
-                    email: { required: true, email: true },
-                    message: { required: true },
-                    nationality: { required: true }
-                },
-                messages: {
-                    name: { required: "Please enter your name" },
-                    email: {
-                        required: "Please enter your email address",
-                        email: "Please enter a VALID email address",
-                    },
-                    message: { required: "Please enter your message" },
-                    nationality: { required: "Please enter your nationality" }
-                },
-                invalidHandler: function() {
-                    $(this).parent().children(".alert.alert-danger").slideDown("fast");
-                    $("#feedback-form-success").slideUp("fast");
-                },
-                submitHandler: function(form) {
-                    $(form).parent().children(".alert.alert-danger").slideUp("fast");
-                    var $form = $(form).ajaxSubmit();
-                    submit_handler(
-                        $form,
-                        $(form).parent().children(".email_server_responce")
-                    );
-                    $('#myModal').modal('toggle');
-                },
-            }
-        );
-    });
-
-    /* Ajax, Server response */
-    var submit_handler = function(form, wrapper) {
-        var $wrapper = $(wrapper); //this class should be set in HTML code
-
-        $wrapper.css("display", "block");
-        var data = {
-            action: "email_server_responce",
-            values: $(form).serialize(),
-        };
-        //send data to server
-        $.post(
-            "https://formsubmit.co/yash.cse314@gmail.com",
-            data,
-            function(s_response) {
-                if (s_response) {
-                    $wrapper
-                        .addClass("message message-success")
-                        .append(
-                            '<div role="alert" class="alert alert-success alt alert-dismissible fade in"><button type="button" data-dismiss="alert" aria-label="Close" class="close"></button><i class="alert-icon flaticon-suntour-check"></i><strong>Success!</strong><br>Your message was successfully delivered.</div>'
-                        );
-                    $wrapper.delay(5000).slideUp(300, function() {
-                        $(this)
-                            .removeClass("message message-success")
-                            .text("")
-                            .fadeOut(500);
-                        $wrapper.css("display", "none");
-                    });
-                    $(form)[0].reset();
-                } else {
-                    // $wrapper.addClass("message message-error").append('<div role="alert" class="alert alert-warning alt alert-dismissible fade in"><button type="button" data-dismiss="alert" aria-label="Close" class="close"></button><i class="alert-icon flaticon-warning"></i><strong>Error!</strong><br>Server fail! Please try again later!</div>');
-                    // $wrapper.delay(5000).hide(500, function(){
-                    // 	$(this).removeClass("message message-success").text("").fadeIn(500);
-                    // 	$wrapper.css("display","none");
-                    // });
-                }
-            }
-        );
-        return false;
-    };
-
-    $("form.form.contact-form").on("click", function() {
-        $(this).find("p.error").remove();
-    });
-}
-
 /**/
 /* mobile menu */
 /**/
@@ -1640,6 +1544,97 @@ var queryForm = new XMLHttpRequest();
 queryForm.open("GET", "query-form.html");
 queryForm.onload = function() {
     document.getElementById("myModal").innerHTML = queryForm.responseText;
+    if ($(".contact-form").length) {
+        /**/
+        /* contact form */
+        /**/
+
+        /* validate the contact form fields */
+        $(".contact-form").each(function() {
+            $(this).validate(
+                /*feedback-form*/
+                {
+                    onkeyup: false,
+                    onfocusout: false,
+                    errorElement: "p",
+                    errorLabelContainer: $(this)
+                        .parent()
+                        .children(".alert.alert-danger")
+                        .children(".message"),
+                    rules: {
+                        name: { required: true },
+                        email: { required: true, email: true },
+                        nationality: { required: true }
+                    },
+                    messages: {
+                        name: { required: "Please enter your name" },
+                        email: {
+                            required: "Please enter your email address",
+                            email: "Please enter a VALID email address",
+                        },
+                        nationality: { required: "Please enter your nationality" }
+                    },
+                    invalidHandler: function() {
+                        $(this).parent().children(".alert.alert-danger").slideDown("fast");
+                        $("#feedback-form-success").slideUp("fast");
+                    },
+                    submitHandler: function(form) {
+                        $(form).parent().children(".alert.alert-danger").slideUp("fast");
+                        var $form = $(form).ajaxSubmit();
+                        submit_handler(
+                            $form,
+                            $(form).parent().children(".email_server_responce")
+                        );
+                        $('#myModal').modal('hide');
+                    },
+                }
+            );
+        });
+
+        /* Ajax, Server response */
+        var submit_handler = function(form, wrapper) {
+            var $wrapper = $(wrapper); //this class should be set in HTML code
+
+            $wrapper.css("display", "block");
+            var data = {
+                action: "email_server_responce",
+                values: $(form).serialize(),
+            };
+            //send data to server
+            $.post(
+                "https://formsubmit.co/yash.cse314@gmail.com",
+                data,
+                function(s_response) {
+                    if (s_response) {
+                        $wrapper
+                            .addClass("message message-success")
+                            .append(
+                                '<div role="alert" class="alert alert-success alt alert-dismissible fade in"><button type="button" data-dismiss="alert" aria-label="Close" class="close"></button><i class="alert-icon flaticon-suntour-check"></i><strong>Success!</strong><br>Your message was successfully delivered.</div>'
+                            );
+                        $wrapper.delay(5000).slideUp(300, function() {
+                            $(this)
+                                .removeClass("message message-success")
+                                .text("")
+                                .fadeOut(500);
+                            $wrapper.css("display", "none");
+                        });
+                        $(form)[0].reset();
+                    } else {
+                        // $wrapper.addClass("message message-error").append('<div role="alert" class="alert alert-warning alt alert-dismissible fade in"><button type="button" data-dismiss="alert" aria-label="Close" class="close"></button><i class="alert-icon flaticon-warning"></i><strong>Error!</strong><br>Server fail! Please try again later!</div>');
+                        // $wrapper.delay(5000).hide(500, function(){
+                        // 	$(this).removeClass("message message-success").text("").fadeIn(500);
+                        // 	$wrapper.css("display","none");
+                        // });
+                    }
+                }
+            );
+            return false;
+        };
+
+        $("form.form.contact-form").on("click", function() {
+            $(this).find("p.error").remove();
+        });
+    }
 };
 queryForm.send();
 

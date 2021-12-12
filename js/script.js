@@ -1648,3 +1648,12 @@ queryForm.send();
 function closeModal() {
     $('#myModal').modal('toggle');
 }
+
+function loadPage() {
+    setTimeout(() => {
+        var loader = document.getElementsByClassName('loading');
+        loader[0].style.display = 'none';
+        var htmlEle = document.getElementsByTagName("HTML");
+        htmlEle[0].style.overflowY = 'scroll';
+    }, 100);
+}

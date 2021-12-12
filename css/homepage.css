@@ -114,16 +114,6 @@ html {
     overflow-y: hidden;
 }
 
-.loading {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 999;
-    text-align: center;
-    background: #F7F7E7 url('../img/Logo/loader5.gif') no-repeat center;
-    background-size: 20rem;
-}
-
 .bg-gray {
     margin-top: 0rem !important;
 }

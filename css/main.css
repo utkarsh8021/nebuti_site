@@ -15137,3 +15137,13 @@ p.error:before {
 .close-button:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
+
+.loading {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    text-align: center;
+    background: #F7F7E7 url('../img/Logo/loader5.gif') no-repeat center;
+    background-size: 20rem;
+}

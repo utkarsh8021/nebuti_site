@@ -78,8 +78,9 @@
     </style>
 </head>
 
-<body>
+<body onload="loadPage()">
     <!-- header page-->
+    <div class="loading"></div>
     <header>
         <!-- site top panel-->
         <div class="site-top-panel">
@@ -207,39 +208,39 @@
   <script type="text/javascript" src="tuner/js/scripts.js"></script> -->
     <script type="text/javascript" src="js/retina.min.js"></script>
     <script>
-        window.onload = function() {
-            var packagesName = [
-                "1 Day, 1 Night",
-                "1 Day, 1 Night",
-                "1 Day, 1 Night",
-                "1 Day, 1 Night",
-                "1 Day, 1 Night",
-                "1 Day, 1 Night",
-                "1 Day, 1 Night",
-                "1 Day, 1 Night",
-                "1 Day, 1 Night",
-                "1 Day, 1 Night",
-                "1 Day, 1 Night",
-            ];
+        var packagesName = [
+            "1 Day, 1 Night",
+            "1 Day, 1 Night",
+            "1 Day, 1 Night",
+            "1 Day, 1 Night",
+            "1 Day, 1 Night",
+            "1 Day, 1 Night",
+            "1 Day, 1 Night",
+            "1 Day, 1 Night",
+            "1 Day, 1 Night",
+            "1 Day, 1 Night",
+            "1 Day, 1 Night",
+        ];
 
-            var desc = [
-                "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                "Some quick example text to build on the card title and make up the bulk of the card's content.",
-            ];
+        var desc = [
+            "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        ];
 
-            var pdfs = [];
+        var pdfs = [];
 
-            for (var i = 0; i < packagesName.length; i++) {
-                var itinerary = `<div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 package-card">
+        for (var i = 0; i < packagesName.length; i++) {
+            var itinerary = `
+            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 package-card">
                 <div class="package-card-body">
                     <h5 class="package-card-body-header">${packagesName[i]}</h5>
                     <p class="package-card-body-desc">${desc[i]}</p>
@@ -248,9 +249,10 @@
                         <button class="package-button btn"><i class=" fa fa-envelope"></i></button>
                     </div>
                 </div>
-            </div>`;
-                document.getElementById("package-row").innerHTML += itinerary;
-            }
+            </div>
+            `;
+            document.getElementById("package-row").innerHTML += itinerary;
+            console.log("hi");
         }
     </script>
 </body>

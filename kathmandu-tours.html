@@ -42,23 +42,9 @@
     </style>
 </head>
 
-<body>
-    <div id="dialogue" style="
-        position: absolute;
-        height: 30rem;
-        width: 60%;
-        top: 5rem;
-        text-align: center;
-        align-self: center;
-        margin: auto 20%;
-        z-index: 10000;
-        display: none;
-    ">
-        <embed id="pdf-viewer" style="
-            height: 30rem; width: 100%; border: 2px solid black;">
-        </embed>
-    </div>
+<body onload="loadPage()">
     <!-- header page-->
+    <div class="loading"></div>
     <header>
         <!-- site top panel-->
         <div class="site-top-panel">

@@ -2416,6 +2416,10 @@ nav .inner-nav.mobile_nav.opened ul {
 .site-top-panel .top-left-wrap {
     font-size: 13px;
     height: 60px;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .site-top-panel .top-left-wrap>* {
@@ -2431,9 +2435,7 @@ nav .inner-nav.mobile_nav.opened ul {
     margin-right: 10px;
 }
 
-.site-top-panel .top-left-wrap a:hover {
-    color: #59abae;
-}
+.site-top-panel .top-left-wrap a:hover {}
 
 .site-top-panel .top-left-wrap span {
     margin: 0 25px;

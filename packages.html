@@ -44,10 +44,12 @@
         
         .package-card-body {
             height: 12rem;
-            background: #a8c0ff;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to , #3f2b96, #a8c0ff);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to bottom, #3f2b96, #a8c0ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+            background: #a8c0ff;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to, #3f2b96, #a8c0ff);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #3f2b96, #a8c0ff);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             margin: 1rem 0.5rem;
             border-radius: 1rem;
             display: flex;
@@ -64,8 +66,12 @@
         .package-card-body-desc {
             flex-grow: 2;
             color: white;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            overflow: scroll;
+            scrollbar-width: none;
+        }
+        
+        .package-card-body-desc::-webkit-scrollbar {
+            display: none;
         }
         
         .package-card-body-buttons {
@@ -330,7 +336,7 @@
         var packagesName = [
             "2_A.pdf",
             "3_A.pdf", "3_B.pdf", "3_C.pdf", "3_D.pdf", "3_E.pdf", "3_F.pdf",
-            "4_A.pdf", "4_B.pdf", "4_C.pdf", "4_D.pdf", "4_E.pdf", "4_F.pdf", "4_G.pdf", "4_H.pdf","4_I.pdf", "4_J.pdf", "4_K.pdf",
+            "4_A.pdf", "4_B.pdf", "4_C.pdf", "4_D.pdf", "4_E.pdf", "4_F.pdf", "4_G.pdf", "4_H.pdf", "4_I.pdf", "4_J.pdf", "4_K.pdf",
             "5_A.pdf", "5_B.pdf", "5_C.pdf", "5_D.pdf", "5_E.pdf", "5_F.pdf", "5_G.pdf", "5_H.pdf", "5_I.pdf", "5_J.pdf", "5_K.pdf", "5_L.pdf", "5_M.pdf",
             "6_A.pdf", "6_B.pdf", "6_C.pdf", "6_D.pdf", "6_E.pdf", "6_F.pdf",
             "7_A.pdf", "7_B.pdf", "7_C.pdf", "7_D.pdf", "7_E.pdf", "7_F.pdf", "7_G.pdf", "7_H.pdf",
@@ -376,7 +382,22 @@
             `3 nights Kathmandu, 2 nights Pokhara & 1 night Nagarkot By land`,
             `3 nights Kathmandu, 2 nights Pokhara & 1 night Nagarkot By air`,
             `3 nights Kathmandu, 2 nights Pokhara Surface & 1 night Jomsom with Muktinath by air`,
-            `3 nights Kathmandu, 2 nights Pokhara by Air & 1 night Jomsom by Air with Muktinath`
+            `3 nights Kathmandu, 2 nights Pokhara by Air & 1 night Jomsom by Air with Muktinath`,
+            `3 nights Kathmandu, 2 nights Pokhara & 2 nights Chitwan Surface package`,
+            `3 nights Kathmandu, 2 nights Pokhara & 2 nights Chitwan Air package`,
+            `2 nights Kathmandu, 2 nights Chitwan, 2 nights Pokhara and 1 night Nagarkot by surface`,
+            `2 nights Kathmandu, 2 nights Chitwan, 2 nights Pokhara By Air and 1 night Nagarkot`,
+            `2 nights Kathmandu, 2 night Pokhara, 1 night Jomsom with Muktinath & 2 night Chitwan`,
+            `2 nights Kathmandu, 2 nights Pokhara, 1 night Lumbini, 1 night Jomsom & 1 nights Chitwan Surface package`,
+            `2 nights Kathmandu,2 nights Pokhara, 1 night Lumbini, & 2 nights Chitwan Surface package`,
+            `4 nights Kathmandu, 2 nights Pokhara & 1 night Nagarkot Surface package`,
+            `3 nights Kathmandu, 2nighys Chitwan, 2 nights Pokhara and1 night Nagarkot by surface`,
+            `3 nights Kathmandu, 2 nights Chitwan, 2 nights Pokhara By Air and 1 night Nagarkot`,
+            `2 nights Kathmandu, 2 nights Pokhara, 1 night Lumbini 2 nights Chitwan & 1 night Nagarkot By Land`,
+            `2 nights Kathmandu, 2 nights Pokhara, 1 night Jomsom, 2 nights Chitwan & 1 night Nagarkot By Land`,
+            `3 nights Kathmandu, 2 night Pokhara, 1 night Jomsom with Muktinath Darshan, 2 nights Chitwan & 1 night Nagarkot By Surface`,
+            `2 nights Kathmandu, 2 night Pokhara, 1 night Jomsom with Muktinath Darshan, 1 night Lumbini, 2 nights Chitwan & 1 night Nagarkot By Surface`,
+            `3 nights Kathmandu, 2 night Pokhara, 1 night Jomsom with Muktinath Darshan, 1 night Lumbini, 2 nights Chitwan & 1 night Nagarkot By Surface`
         ];
 
         var pdfs = [];
@@ -393,7 +414,7 @@
                             <button class="package-button btn"><i class=" fa fa-download"></i></button>
                         </a>
                         <a href="/packages/${packagesName[i]}" target="_blank">
-                            <button class="package-button btn"><i class=" fa fa-envelope"></i></button>
+                            <button class="package-button btn"><i class=" fa fa-file-pdf-o"></i></button>
                         </a>
                     </div>
                 </div>

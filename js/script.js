@@ -745,9 +745,9 @@ if ($("#calendar").length) {
 /* masonry */
 /**/
 function masonry_init() {
-    $(".masonry").imagesLoaded(function() {
-        $(".masonry").masonry();
-    });
+    // $(".masonry").imagesLoaded(function() {
+    //     $(".masonry").masonry();
+    // });
 }
 
 /**/
@@ -763,11 +763,11 @@ function filter_init() {
         filter_mode = "fitRows";
     }
     $("#filter-grid").imagesLoaded(function() {
-        $("#filter-grid").isotope({
-            itemSelector: ".all",
-            layoutMode: filter_mode,
-            filter: fselector,
-        });
+        // $("#filter-grid").isotope({
+        //     itemSelector: ".all",
+        //     layoutMode: filter_mode,
+        //     filter: fselector,
+        // });
     });
 
     $(".filter").on("click", function() {

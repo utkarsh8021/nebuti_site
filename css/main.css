@@ -1792,6 +1792,7 @@ header .transparent .inner-nav:after {
     border-right: none;
     letter-spacing: 0.5px;
     cursor: pointer;
+    color: white;
 }
 
 .inner-nav.desktop-nav ul li .mn-sub li>a:not(.mn-group-title):before {

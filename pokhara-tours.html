@@ -26,15 +26,15 @@
             width: calc(100% - 5px);
             color: black;
         }
-        
+
         textarea {
             color: black;
         }
-        
+
         ul li {
             color: #59abae !important;
         }
-        
+
         .page {
             padding-top: 3rem;
             padding-bottom: 2rem;
@@ -53,11 +53,13 @@
                     <div class="col-md-6 col-sm-7">
                         <div class="top-left-wrap font-3">
                             <div class="mail-top">
-                                <a href="mailto:info@nebuti.com"> <i class="fa fa-envelope" aria-hidden="true"></i>info@nebuti.com</a>
+                                <a href="mailto:info@nebuti.com"> <i class="fa fa-envelope"
+                                        aria-hidden="true"></i>info@nebuti.com</a>
                             </div>
                             <span>/</span>
                             <div class="tel-top">
-                                <a href="tel:+977-1-4422833"> <i class="fa fa-phone" aria-hidden="true"></i>+977-1-4422833</a>
+                                <a href="tel:+977-1-4422833"> <i class="fa fa-phone"
+                                        aria-hidden="true"></i>+977-1-4422833</a>
                             </div>
                         </div>
                     </div>
@@ -70,28 +72,29 @@
             <div class="full-wrapper relative clearfix container">
                 <!-- Logo ( * your text or image into link tag *)-->
                 <div class="nav-logo-wrap local-scroll">
-                    <a href="index.html" class="logo"><img src="img/nebutilogo.png" data-at2x="img/nebutilogo.png" alt></a>
+                    <a href="index.html" class="logo"><img src="img/nebutilogo.png" data-at2x="img/nebutilogo.png"
+                            alt></a>
                 </div>
                 <!-- Main Menu-->
                 <div class="inner-nav desktop-nav">
                     <ul class="clearlist">
                         <!-- Item With Sub-->
-                        <li><a href="index.html" class="active">Home</i></a>
+                        <li><a href="index.html">Home</i></a>
                         </li>
                         <!-- End Item With Sub-->
                         <li>
-                            <a href="#" class="mn-has-sub">Destinations <i class="fa fa-angle-down button_open"></i></a>
+                            <a href="#" class="mn-has-sub active">Destinations <i
+                                    class="fa fa-angle-down button_open"></i></a>
                             <!-- Sub-->
                             <ul class="mn-sub mn-has-multi">
                                 <li class="mn-sub-multi">
                                     <a class="mn-group-title">Most Visited</a>
                                     <ul class="mn-sub-multi">
                                         <li><a href="kathmandu-tours.html">Kathmandu</a></li>
-                                        <li><a href="#">Pokhara</a></li>
-                                        <li><a href="#">Everest</a></li>
-                                        <li><a href="#">Placeholder</a></li>
-                                        <li><a href="#">Placeholder</a></li>
-                                        <li><a href="#">placeholder</a></li>
+                                        <li><a href="pokhara-tours.html">Pokhara</a></li>
+                                        <li><a href="mteverest-tours.html">Mt. Everest</a></li>
+                                        <li><a href="chitwan-tours.html">Chitwan</a></li>
+                                        <li><a href="lumbini-tours.html">Lumbini</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -103,7 +106,8 @@
                         <li><a href="#">Achievements</a></li>
                         <li><a href="page-contact.html">Contact Us</a></li>
                         <li class="search" id="menu-item-18">
-                            <button class="btn-change1" data-toggle="modal" data-target="#myModal" style="height: 2.3rem; margin: 1.5rem auto; border-radius: 0.3em; width:8rem">
+                            <button class="btn-change1" data-toggle="modal" data-target="#myModal"
+                                style="height: 2.3rem; margin: 1.5rem auto; border-radius: 0.3em; width:8rem">
                                 Raise a query
                             </button>
                         </li>
@@ -128,8 +132,11 @@
                         </h4>
                         <div class="cws_divider mb-25 mt-5"></div>
                         <p class="mt-20" style="color: #000000b8;
-                        font-size: 20px; margin-right: 40px;">Kathmandu, Nepal's capital, is set in a valley surrounded by the Himalayan mountains. Kathmandu is and has been for many years the centre of Nepal's history, art, culture, and economy. At the heart of the old city’s mazelike alleys
-                            is Durbar Square, which becomes frenetic during Indra Jatra, a religious festival featuring masked dances.
+                        font-size: 20px; margin-right: 40px;">Kathmandu, Nepal's capital, is set in a valley surrounded
+                            by the Himalayan mountains. Kathmandu is and has been for many years the centre of Nepal's
+                            history, art, culture, and economy. At the heart of the old city’s mazelike alleys
+                            is Durbar Square, which becomes frenetic during Indra Jatra, a religious festival featuring
+                            masked dances.
                         </p>
                     </div>
                 </div>
@@ -168,7 +175,8 @@
                 <div class="col-md-12">
                     <!-- google map-->
                     <div class="map-wrapper">
-                        <iframe src="https://www.google.com/maps/d/embed?mid=1YeV-CBqH1wi1X9q1UyoHyl-5ais" width="640" height="480" allowfullscreen=""></iframe>
+                        <iframe src="https://www.google.com/maps/d/embed?mid=1YeV-CBqH1wi1X9q1UyoHyl-5ais" width="640"
+                            height="480" allowfullscreen=""></iframe>
                     </div>
                 </div>
             </div>
@@ -228,8 +236,8 @@
         //     }
         // });
 
-        $(document).ready(function() {
-            $('.trigger').click(function(e) {
+        $(document).ready(function () {
+            $('.trigger').click(function (e) {
                 // if (window.innerWidth <= 480)
                 window.open(e.target.getAttribute("data-src"));
                 // else {
@@ -243,7 +251,7 @@
             });
         });
 
-        $(document).on("ready", function() {
+        $(document).on("ready", function () {
             $(".slider-for").slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,

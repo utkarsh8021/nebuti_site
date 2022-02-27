@@ -9,12 +9,11 @@ $(document).ready(function() {
     $(window).on("scroll", progress_bar_loader);
     cws_page_focus();
     progress_bar_loader();
-    init_twitter_carusel();
     init_fancy();
     search_open();
-    if ($(".cws_prlx_section").length) {
-        $(".cws_prlx_section").cws_prlx();
-    }
+    // if ($(".cws_prlx_section").length) {
+    //     $(".cws_prlx_section").cws_prlx();
+    // }
     init_rev_slider();
     init_add_cart();
     init_color_filter();
@@ -626,41 +625,6 @@ jQuery(owl_single).each(function() {
         pagination: false,
     });
 });
-
-/**/
-/* Twitter carousel */
-/**/
-function init_twitter_carusel() {
-    if ($(".twitter-1").length) {
-        $(".twitter-1").tweet({
-            username: "Creative_WS",
-            count: 3,
-            loading_text: "loading twitter feed...",
-            template: "<i class='fa fa-twitter twitt-icon'></i><p><a href='{user_url}'>@{screen_name}</a>{join}{text}<br>{time}</p>",
-        });
-        $(".twitter-1.full-screen .tweet_list").addClass("carousel-pag main-color");
-        var owl_pag = $(".carousel-pag");
-        jQuery(owl_pag).each(function() {
-            jQuery(this).owlCarousel({
-                itemsCustom: [
-                    [0, 1],
-                    [479, 1],
-                    [738, 1],
-                    [980, 1],
-                    [1170, 1],
-                ],
-                navigation: false,
-                pagination: true,
-            });
-        });
-    }
-    $(".twitter-footer").tweet({
-        username: "Creative_WS",
-        count: 1,
-        loading_text: "loading twitter feed...",
-        template: "<i class='fa fa-twitter twitt'></i><p><a class='link-color' href='{user_url}'>@{screen_name}</a>{join}{text}<br>{time}</p>",
-    });
-}
 
 /**/
 /********   Carousel   *********/

@@ -1,0 +1,3 @@
+Sitemap: https://www.nebuti.com/sitemap.xml
+User-Agent: *
+Allow: /

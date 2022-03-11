@@ -344,7 +344,7 @@ ul li {
     padding-left: 15px;
     position: relative;
     margin-left: 10px;
-    color: #b5b5b5;
+    /* color: #b5b5b5; */
 }
 
 ul.inline li {
@@ -393,7 +393,7 @@ ul.style-2 li:before {
 ul.style-3 li:before {
     content: "\f00c";
     font-family: FontAwesome;
-    color: #a9b5c1;
+    color: #59abae;
     font-size: 12px;
     border: 0;
     position: absolute;

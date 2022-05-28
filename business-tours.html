@@ -2,17 +2,16 @@
 <html lang="en">
 
 <head>
-    <title>Contact Us</title>
+    <title>Business tours</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="fonts/fi/flaticon.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/indent.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T42L3777N0"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -23,7 +22,7 @@
         gtag('js', new Date());
 
         gtag('config', 'G-T42L3777N0');
-    </script>
+    </script> -->
     <style>
         form .form-row {
             width: calc(100% - 5px);
@@ -41,6 +40,24 @@
         .page {
             padding-top: 3rem;
             padding-bottom: 2rem;
+        }
+
+        .animated-image {
+            transition: 2s;
+            opacity: 0;
+        }
+
+        .animated-image.left {
+            transform: translateX(-600px);
+        }
+
+        .animated-image.right {
+            transform: translateX(+600px);
+        }
+
+        .animated-image.show {
+            transform: translateX(0);
+            opacity: 1;
         }
     </style>
 </head>
@@ -88,7 +105,7 @@
                             <a href="#" class="mn-has-sub">Destinations <i class="fa fa-angle-down button_open"></i></a>
                             <!-- Sub-->
                             <ul class="mn-sub mn-has-multi">
-                                <li><a href="kathmandu-tours.html">Kathmandu</a></li>
+                                <li><a href="kathmandu-tours.html" class="active">Kathmandu</a></li>
                                 <li><a href="pokhara-tours.html">Pokhara</a></li>
                                 <li><a href="mteverest-tours.html">Mt. Everest</a></li>
                                 <li><a href="chitwan-tours.html">Chitwan</a></li>
@@ -100,7 +117,7 @@
                             <a href="packages.html">Packages</a>
                         </li>
                         <li><a href="#">Achievements</a></li>
-                        <li><a href="page-contact.html" class="active">Contact Us</a></li>
+                        <li><a href="page-contact.html">Contact Us</a></li>
                         <li class="search" id="menu-item-18">
                             <button class="btn-change1" data-toggle="modal" data-target="#myModal"
                                 style="height: 2.3rem; margin: 1.5rem auto; border-radius: 0.3em; width:8rem">
@@ -123,93 +140,63 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="contact-item">
-                        <h1 class="title-section mt-30"><span class="font-bold">Contacts</span></h1>
+                        <h1 class="title-section mt-10">
+                            <span class="font-bold" style="color: #8360c3;">Business tours</span>
+                        </h1>
                         <div class="cws_divider mb-25 mt-5"></div>
-                        <ul class="icon">
-                            <li> <a href="#">anil@nebuti.com<i class="flaticon-suntour-email"></i></a></li>
-                            <li> <a href="#">+977 -1- 4422833, 4422824, 4424825<i
-                                        class="flaticon-suntour-phone"></i></a></li>
-                            <li> <a href="#">
-                                    Kalikasthan,
-                                    Kathmandu,
-                                    Nepal 44600
-                                    <i class="flaticon-suntour-map"></i></a></li>
-                        </ul>
-                        <p class="mt-20" style="color: black;">One of the best travel companies based in Nepal with over
-                            34 years of experience. We provide you best in class services including Tailormade Tours,
-                            Conference Organiser, Incentive Travels, Corporate Travels, Sports Travels, and
-                            much more. </p>
-                        <div class="contact-cws-social">
-                            <a href="#" class="cws-social fa fa-twitter"></a>
-                            <a href="#" class="cws-social fa fa-facebook"></a>
-                            <a href="#" class="cws-social fa fa-google-plus"></a>
-                            <a href="#" class="cws-social fa fa-linkedin"></a>
-                        </div>
+                        <p class="mt-10" style="color: #000000b8;
+                        font-size: 18px; margin-right: 40px;">
+                            Choosing the right travel agency make your business travel whole lot easier and a success.
+                            We at Nebuti, understand the issues involved in
+                            running a business. We work with our clients to customize a service, keep it flexible and
+                            provide it to you according to your business travel needs. Our professional team offers
+                            personalized service to develop a complete and proactive plan that maximize your
+                            flexibility, manage your travel
+                            and minimize your cost.
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="map-wrapper">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7119.83329696144!2d85.32411365975874!3d27.709111363561675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1622272144743!5m2!1sen!2snp"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <img class="animated-image right" id="sliding-image" src="img/business.jpg" />
+                </div>
+            </div>
+            <div class="mb-30"></div>
+            <div class="mb-40 mt-40 cws_divider"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="animated-image left" id="sliding-image" src="img/conferences.jpg" />
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-item">
+                        <h1 class="title-section mt-10">
+                            <span class="font-bold" style="color: #8360c3;">Conferences</span>
+                        </h1>
+                        <div class="cws_divider mb-25 mt-5"></div>
+                        <p class="mt-10" style="color: #000000b8;
+                        font-size: 18px; margin-right: 40px;">
+                            Conference involving travel, accommodation and
+                            catering could be time consuming, costly and difficult events to manage in a business
+                            especially when that involves the coordination of multiple employees. We have experience of
+                            over 34 years in managing and hosting conferences throughout Nepal. We are capable of
+                            providing personal services whether it is a large group or small group of 10 as we do it on
+                            a regular basis.
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="element-section pattern bg-gray-3 relative pt-60 pb-100" id="contact-form">
-            <div class="container">
-                <h4 class="title-section mb-20"><span class="font-bold">Contact us</span></h4>
-                <div class="widget-contact-form pb-0">
-                    <!-- contact-form-->
-
-                    <div class="email_server_responce"></div>
-                    <form method="post" action="https://formsubmit.co/rishav@nebuti.com"
-                        class="form contact-form alt clearfix">
-                        <input type="hidden" name="_next" value="/page-contact.html" />
-                        <input type="hidden" name="_captcha" value="false" />
-                        <input type="hidden" name="_template" value="table" />
-                        <div class="row">
-                            <div class="col-md-4 col-xs-6">
-                                <div class="input-container">
-                                    <input type="text" name="name" value="" placeholder="Your Name*"
-                                        aria-invalid="false" aria-required="true" class="form-row form-row-first">
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-xs-6">
-                                <div class="input-container">
-                                    <input type="text" name="phone" value=""
-                                        placeholder="Phone Number (with country code)" aria-required="false"
-                                        class="form-row form-row-last">
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-xs-12">
-                                <div class="input-container">
-                                    <input type="text" name="email" value="" placeholder="Your Email*"
-                                        aria-required="true" class="form-row form-row-last">
-                                </div>
-                            </div>
-
+            <section class="contact-us pt-20 pb-20 relative" style="background-color: white;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <a href="/packages.html">
+                                <button type="button" class="btn-change1">Packages</button>
+                            </a>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="input-container">
-                                    <textarea name="message" cols="40" rows="4" placeholder="Please type your queries?"
-                                        aria-invalid="false" aria-required="true"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        </br>
-                        <div class="row">
-                            <div class="col-md-12 text-center">
-                                <button type="submit" class="btn-change1">SUBMIT</button>
-                            </div>
-                        </div>
-                    </form>
-
-                    <!-- /contact-form-->
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
+    </div>
     </div>
     <!-- ! content-->
     <!-- form -->
@@ -220,6 +207,7 @@
     <div id="scroll-top"><i class="fa fa-angle-up"></i></div>
     <!-- ! footer-->
 
+
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.sticky.js"></script>
@@ -229,8 +217,25 @@
     <script type="text/javascript" src="js/script.min.js"></script>
     <script type="text/javascript" src="js/jquery.flexslider.js"></script>
     <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
-</body>
+    <script type="text/javascript">
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                console.log(entry);
+                const train = entry.target;
 
-<!-- Mirrored from html.cwsthemes.com/suntour/page-contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 31 Jan 2021 04:46:21 GMT -->
+                if (entry.isIntersecting) {
+                    train.classList.add('show');
+                    return; // if we added the class, exit the function
+                }
+
+                // We're not intersecting, so remove the class!
+                train.classList.remove('show');
+            });
+        });
+
+        observer.observe(document.getElementsByClassName('animated-image')[0]);
+        observer.observe(document.getElementsByClassName('animated-image')[1]);
+    </script>
+</body>
 
 </html>

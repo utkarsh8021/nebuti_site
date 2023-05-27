@@ -653,6 +653,11 @@ section.contact-us.pt-20.pb-20.relative {
     color: #ffffff;
 }
 
+.title-section-top.alt-2 {
+    font-size: 18px;
+    color: #ffffff;
+}
+
 .title-section-top.gray {
     color: #25292c;
 }
@@ -8009,6 +8014,16 @@ aside .owl-single-item .pic img {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+
+@media (max-width: 767px) {
+    .owl-buttons .owl-prev {
+        left: 0px !important;
+    }
+    
+    .owl-buttons .owl-next {
+        right: 0px !important;
+    }
 }
 
 .owl-buttons .owl-prev {

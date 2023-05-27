@@ -1,738 +1,1159 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Nebuti Travels - Best tours and travels in Nepal</title>
-    <link rel="icon" href="./img/favicon_io/favicon-32x32.png" type="image/png">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="google-site-verification" content="hUaT9Qg7CM1etVaBVjviwxaxjAF8aMj4UU84avWWW-E" />
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="fonts/fi/flaticon.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/homepage.css">
-    <link rel="stylesheet" href="css/indent.css">
+    <link
+      rel="icon"
+      href="./img/favicon_io/favicon-32x32.png"
+      type="image/png"
+    />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="fonts/fi/flaticon.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/homepage.css" />
+    <link rel="stylesheet" href="css/indent.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
     <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T42L3777N0"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-T42L3777N0"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-T42L3777N0');
+      gtag("config", "G-T42L3777N0");
     </script>
-</head>
+  </head>
 
-<body onload="loadPage()">
+  <body onload="loadPage()">
     <!-- header page-->
     <div class="loading"></div>
     <header>
-        <!-- site top panel-->
-        <div class="site-top-panel">
-            <div class="container p-relative">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12 col-xs-12 col-lg-4">
-                        <div class="top-left-wrap font-3">
-                            <div class="mail-top">
-                                <a href="mailto:info@nebuti.com"> <i class="fa fa-envelope"
-                                        aria-hidden="true"></i>info@nebuti.com</a>
-                            </div>
-                            <div class="tel-top">
-                                <a href="https://wa.me/9779801025057"> <i class="fa fa-whatsapp"
-                                        aria-hidden="true"></i>+977-9801025057</a>
-                            </div>
-                        </div>
-                    </div>
+      <!-- site top panel-->
+      <div class="site-top-panel">
+        <div class="container p-relative">
+          <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12 col-lg-4">
+              <div class="top-left-wrap font-3">
+                <div class="mail-top">
+                  <a href="mailto:info@nebuti.com">
+                    <i class="fa fa-envelope" aria-hidden="true"></i
+                    >info@nebuti.com</a
+                  >
                 </div>
+                <div class="tel-top">
+                  <a href="https://wa.me/9779801025057">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i
+                    >+977-9801025057</a
+                  >
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- ! site top panel -->
-        <!-- Navigation panel-->
-        <nav class="main-nav js-stick">
-            <div class="full-wrapper relative clearfix container">
-                <!-- Logo ( * your text or image into link tag *)-->
-                <div class="nav-logo-wrap local-scroll">
-                    <a href="index.html" class="logo"><img src="img/nebutilogo.png" data-at2x="img/nebutilogo.png"
-                            alt></a>
-                </div>
-                <!-- Main Menu-->
-                <div class="inner-nav desktop-nav">
-                    <ul class="clearlist">
-                        <!-- Item With Sub-->
-                        <li><a href="index.html" class="active">Home</i></a>
-                        </li>
-                        <!-- End Item With Sub-->
-                        <li>
-                            <a href="#" class="mn-has-sub">Destinations <i class="fa fa-angle-down button_open"></i></a>
-                            <!-- Sub-->
-                            <ul class="mn-sub mn-has-multi">
-                                <li><a href="kathmandu-tours.html">Kathmandu</a></li>
-                                <li><a href="pokhara-tours.html">Pokhara</a></li>
-                                <li><a href="mteverest-tours.html">Mt. Everest</a></li>
-                                <li><a href="chitwan-tours.html">Chitwan</a></li>
-                                <li><a href="muktinath-tours.html">Muktinath</a></li>
-                            </ul>
-                            <!-- End Sub-->
-                        </li>
-                        <li>
-                            <a href="packages.html">Packages</a>
-                        </li>
-                        <li><a href="achievements.html">Achievements</a></li>
-                        <li><a href="page-contact.html">Contact Us</a></li>
-                        <li class="search" id="menu-item-18">
-                            <button class="btn-change1" data-toggle="modal" data-target="#myModal"
-                                style="height: 2.3rem; margin: 1.5rem auto; border-radius: 0.3em; width:8rem">
-                                Raise a query
-                            </button>
-                        </li>
-                        <!-- End Item-->
-                    </ul>
-                </div>
-                <!-- End Main Menu-->
-            </div>
-        </nav>
-        <!-- End Navigation panel-->
+      </div>
+      <!-- ! site top panel -->
+      <!-- Navigation panel-->
+      <nav class="main-nav js-stick">
+        <div class="full-wrapper relative clearfix container">
+          <!-- Logo ( * your text or image into link tag *)-->
+          <div class="nav-logo-wrap local-scroll">
+            <a href="index.html" class="logo"
+              ><img src="img/nebutilogo.png" data-at2x="img/nebutilogo.png" alt
+            /></a>
+          </div>
+          <!-- Main Menu-->
+          <div class="inner-nav desktop-nav">
+            <ul class="clearlist">
+              <!-- Item With Sub-->
+              <li><a href="index.html" class="active">Home</a></li>
+              <!-- End Item With Sub-->
+              <li>
+                <a href="#" class="mn-has-sub"
+                  >Destinations <i class="fa fa-angle-down button_open"></i
+                ></a>
+                <!-- Sub-->
+                <ul class="mn-sub mn-has-multi">
+                  <li><a href="kathmandu-tours.html">Kathmandu</a></li>
+                  <li><a href="pokhara-tours.html">Pokhara</a></li>
+                  <li><a href="mteverest-tours.html">Mt. Everest</a></li>
+                  <li><a href="chitwan-tours.html">Chitwan</a></li>
+                  <li><a href="muktinath-tours.html">Muktinath</a></li>
+                </ul>
+                <!-- End Sub-->
+              </li>
+              <li>
+                <a href="packages.html">Packages</a>
+              </li>
+              <li><a href="achievements.html">Achievements</a></li>
+              <li><a href="page-contact.html">Contact Us</a></li>
+              <li class="search" id="menu-item-18">
+                <button
+                  class="btn-change1"
+                  data-toggle="modal"
+                  data-target="#myModal"
+                  style="
+                    height: 2.3rem;
+                    margin: 1.5rem auto;
+                    border-radius: 0.3em;
+                    width: 8rem;
+                  "
+                >
+                  Raise a query
+                </button>
+              </li>
+              <!-- End Item-->
+            </ul>
+          </div>
+          <!-- End Main Menu-->
+        </div>
+      </nav>
+      <!-- End Navigation panel-->
     </header>
     <!-- ! header page-->
-    <div style="height: 100vh !important;">
-        <div class="hero-page" style="margin-top: 80px;">
-            <section class="slider-for slider1">
-                <div class="slide">
-                    <img src="img/11.jpg" class="hero-img" loading="lazy" />
-                    <h1 style="font-size: 2rem;" class="action font-4">Experience the <br /> Extraordinary
-                        <br>
-                    </h1>
-                </div>
-                <div class="slide">
-                    <img src="img/22.jpg" class="hero-img" loading="lazy" />
-                    <h1 style="font-size: 2rem;" class="action font-4">Tailormade Tours with<br />34 Years of Experience
-                        <br>
-                    </h1>
-                </div>
-                <div class="slide">
-                    <img src="img/33.jpg" class="hero-img" loading="lazy" />
-                    <h1 style="font-size: 2rem;" class="action font-4">We make your <br /> trip Memorable
-                        <br>
-                    </h1>
-                </div>
-                <div class="slide">
-                    <img src="img/everest.jpg" class="hero-img" loading="lazy" />
-                    <h1 style="font-size: 2rem;" class="action font-4">One-Stop Solution for all <br /> your travel
-                        needs
-                        <br>
-                    </h1>
-                </div>
-            </section>
-        </div>
-        <div class="carousel-top">
-            <section class="slider-nav slider2">
-                <div>
-                    <a href="kathmandu-tours.html">
-                        <button class="btn-change2 heropage-btn" type="button" tabindex="0">Katmandu<i
-                                class="fa fa-fw fa-angle-right" aria-hidden="true"></i></button>
-                        <img src="img/1.jpg" class="top-img" style="width: 90%;" loading="lazy" />
-                    </a>
-                </div>
-                <div>
-                    <a href="chitwan-tours.html">
-                        <button class="btn-change2 heropage-btn" type="button" tabindex="0">Chitwan<i
-                                class="fa fa-fw fa-angle-right" aria-hidden="true"></i></button>
-                        <img src="img/rhino2.jpg" class="top-img" style="width:90%" loading="lazy" />
-                    </a>
-                </div>
-                <div>
-                    <a href="pokhara-tours.html">
-                        <button class="btn-change2 heropage-btn" type="button" tabindex="0">Pokhara<i
-                                class="fa fa-fw fa-angle-right" aria-hidden="true"></i></button>
-                        <img src="img/pagoda.jpg" class="top-img" style="width: 90%;" loading="lazy" />
-                    </a>
-                </div>
-                <div>
-                    <a href="mteverest-tours.html">
-                        <button class="btn-change2 heropage-btn" type="button" tabindex="0">Mt. Everest<i
-                                class="fa fa-fw fa-angle-right" aria-hidden="true"></i></button>
-                        <img src="img/4.jpg" class="top-img" style="width: 90%;" loading="lazy" />
-                    </a>
-                </div>
-            </section>
-        </div>
+    <div style="height: 100vh !important">
+      <div class="hero-page" style="margin-top: 80px">
+        <section class="slider-for slider1">
+          <div class="slide">
+            <img src="img/11.jpg" class="hero-img" loading="lazy" />
+            <h1 style="font-size: 2rem" class="action font-4">
+              Experience the <br />
+              Extraordinary
+              <br />
+            </h1>
+          </div>
+          <div class="slide">
+            <img src="img/22.jpg" class="hero-img" loading="lazy" />
+            <h1 style="font-size: 2rem" class="action font-4">
+              Tailormade Tours with<br />34 Years of Experience
+              <br />
+            </h1>
+          </div>
+          <div class="slide">
+            <img src="img/33.jpg" class="hero-img" loading="lazy" />
+            <h1 style="font-size: 2rem" class="action font-4">
+              We make your <br />
+              trip Memorable
+              <br />
+            </h1>
+          </div>
+          <div class="slide">
+            <img src="img/everest.jpg" class="hero-img" loading="lazy" />
+            <h1 style="font-size: 2rem" class="action font-4">
+              One-Stop Solution for all <br />
+              your travel needs
+              <br />
+            </h1>
+          </div>
+        </section>
+      </div>
+      <div class="carousel-top">
+        <section class="slider-nav slider2">
+          <div>
+            <a href="kathmandu-tours.html">
+              <button
+                class="btn-change2 heropage-btn"
+                type="button"
+                tabindex="0"
+              >
+                Katmandu<i
+                  class="fa fa-fw fa-angle-right"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              <img
+                src="img/1.jpg"
+                class="top-img"
+                style="width: 90%"
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <div>
+            <a href="chitwan-tours.html">
+              <button
+                class="btn-change2 heropage-btn"
+                type="button"
+                tabindex="0"
+              >
+                Chitwan<i
+                  class="fa fa-fw fa-angle-right"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              <img
+                src="img/rhino2.jpg"
+                class="top-img"
+                style="width: 90%"
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <div>
+            <a href="pokhara-tours.html">
+              <button
+                class="btn-change2 heropage-btn"
+                type="button"
+                tabindex="0"
+              >
+                Pokhara<i
+                  class="fa fa-fw fa-angle-right"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              <img
+                src="img/pagoda.jpg"
+                class="top-img"
+                style="width: 90%"
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <div>
+            <a href="mteverest-tours.html">
+              <button
+                class="btn-change2 heropage-btn"
+                type="button"
+                tabindex="0"
+              >
+                Mt. Everest<i
+                  class="fa fa-fw fa-angle-right"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              <img
+                src="img/4.jpg"
+                class="top-img"
+                style="width: 90%"
+                loading="lazy"
+              />
+            </a>
+          </div>
+        </section>
+      </div>
     </div>
     <!-- counter section -->
     <section class="small-section-data">
-        <div class="container">
-            <div class="row" style="text-align: center;">
-                <div class="col-md-3 col-xs-12 mb-md-30">
-                    <div class="counter-block" style="margin-left: 60px">
-                        <i class="counter-icon flaticon-suntour-world"></i>
-                        <div class="counter-name-wrap">
-                            <div data-count="3000" class="counter">0</div>
-                            <div class="counter-name">Tours</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-xs-12 mb-md-30">
-                    <div class="counter-block" style="margin-left: 60px">
-                        <i class="counter-icon flaticon-suntour-fireworks"></i>
-                        <div class="counter-name-wrap">
-                            <div data-count="200" class="counter">0</div>
-                            <div class="counter-name">Itinerary</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-xs-12 mb-md-30">
-                    <div class="counter-block" style="margin-left: 60px">
-                        <i class="counter-icon flaticon-suntour-hotel"></i>
-                        <div class="counter-name-wrap">
-                            <div data-count="500" class="counter">0</div>
-                            <div class="counter-name">Hotels</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-xs-12 mb-md-30">
-                    <div class="counter-block" style="margin-left: 60px">
-                        <i class="counter-icon flaticon-suntour-ship"></i>
-                        <div class="counter-name-wrap">
-                            <div data-count="350" class="counter">0</div>
-                            <div class="counter-name">Adventures</div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row" style="text-align: center">
+          <div class="col-md-3 col-xs-12 mb-md-30">
+            <div class="counter-block" style="margin-left: 60px">
+              <i class="counter-icon flaticon-suntour-world"></i>
+              <div class="counter-name-wrap">
+                <div data-count="3000" class="counter">0</div>
+                <div class="counter-name">Tours</div>
+              </div>
             </div>
+          </div>
+          <div class="col-md-3 col-xs-12 mb-md-30">
+            <div class="counter-block" style="margin-left: 60px">
+              <i class="counter-icon flaticon-suntour-fireworks"></i>
+              <div class="counter-name-wrap">
+                <div data-count="200" class="counter">0</div>
+                <div class="counter-name">Itinerary</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-12 mb-md-30">
+            <div class="counter-block" style="margin-left: 60px">
+              <i class="counter-icon flaticon-suntour-hotel"></i>
+              <div class="counter-name-wrap">
+                <div data-count="500" class="counter">0</div>
+                <div class="counter-name">Hotels</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-12 mb-md-30">
+            <div class="counter-block" style="margin-left: 60px">
+              <i class="counter-icon flaticon-suntour-ship"></i>
+              <div class="counter-name-wrap">
+                <div data-count="350" class="counter">0</div>
+                <div class="counter-name">Adventures</div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- counter section ends -->
     <!-- recommended tours -->
     <section class="small-section bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h6 class="title-section-top font-4">Top rated</h6>
-                    <h2 class="title-section"><span>Recommended</span> Tours</h2>
-                    <p style="color: white;">Some of the best tours recommended by us with top notch quality assurance.
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <div class="hide-icon-mobile">
-                        <i class="flaticon-suntour-world title-icon"></i>
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="recom-item">
-                            <div class="recom-media">
-                                <a href="rec-tour-details1.html">
-                                    <div class="pic" style="height: 16rem;"><img loading="lazy"
-                                            src="pic/recomended/Nagarkot.png" data-at2x="pic/recomended/Nagarkot.png"
-                                            alt width="700"></div>
-                                </a>
-                                <div class="location"><i class="flaticon-suntour-map"></i> Nagarkot</div>
-                            </div>
-                            <!-- Recomended Content-->
-                            <div class="recom-item-body">
-                                <a href="rec-tour-details1.html">
-                                    <h6 class="blog-title">Kathmandu & Nagarkot<br>3N/4D(By Air)</h6>
-                                </a>
-                                <div class="stars stars-4"></div>
-                                <p class="mb-30">Enjoy the culture of the capital of Nepal and the beauty of himalayan
-                                    range from Nagarkot.
-                                </p>
-                                <a href="rec-tour-details1.html" class="recom-button">Read more</a><a
-                                    href="rec-tour-details1.html" class="cws-button small alt">Book now</a>
-                                <div class="action font-5">Offer</div>
-                            </div>
-                            <!-- Recomended Image-->
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="recom-item">
-                            <div class="recom-media">
-                                <a href="rec-tour-details2.html">
-                                    <div class="pic" style="height: 16rem;"><img loading="lazy"
-                                            src="pic/recomended/pokhara-min.png"
-                                            data-at2x="pic/recomended/pokhara-min.png" alt width="700">
-                                    </div>
-                                </a>
-                                <div class="location"><i class="flaticon-suntour-map"></i> Pokhara</div>
-                            </div>
-                            <!-- Recomended Content-->
-                            <div class="recom-item-body">
-                                <a href="rec-tour-details2.html">
-                                    <h6 class="blog-title">Kathmandu & Pokhara<br>5N/6D(By Air)</h6>
-                                </a>
-                                <div class="stars stars-4"></div>
-                                <p class="mb-30">Two of the most beautiful tourist spots filled with
-                                    culture and excitement.
-                                </p>
-                                <a href="rec-tour-details2.html" class="recom-button">Read
-                                    more</a><a href="rec-tour-details2.html" class="cws-button small alt">Book now</a>
-                                <div class="action font-5">Offer</div>
-                            </div>
-                            <!-- Recomended Image-->
-                        </div>
-                    </div>
-                    <!-- Recomended item-->
-                    <div class="col-md-6">
-                        <div class="recom-item">
-                            <div class="recom-media">
-                                <a href="rec-tour-details3.html">
-                                    <div class="pic" style="height: 16rem;"><img loading="lazy"
-                                            src="pic/recomended/chitwan.jpg" data-at2x="pic/recomended/chitwan.jpg" alt
-                                            width="700"></div>
-                                </a>
-                                <div class="location"><i class="flaticon-suntour-map"></i> Chitwan</div>
-                            </div>
-                            <!-- Recomended Content-->
-                            <div class="recom-item-body">
-                                <a href="rec-tour-details3.html">
-                                    <h6 class="blog-title">Kathmandu, Pokhara & Chitwan<br>7N/8D(By Air)</h6>
-                                </a>
-                                <div class="stars stars-5"></div>
-                                <p class="mb-30">Experience the beauty of the most beautiful places in Kathmandu,
-                                    Pokhara and Chitwan National Park.
-                                </p>
-                                <a href="rec-tour-details3.html" class="recom-button">Read more</a><a
-                                    href="rec-tour-details3.html" class="cws-button small alt">Book now</a>
-                                <div class="action font-5">Offer</div>
-                            </div>
-                            <!-- Recomended Images-->
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="recom-item">
-                            <div class="recom-media">
-                                <a href="rec-tour-details4.html">
-                                    <div class="pic" style="height: 16rem;"><img loading="lazy"
-                                            src="pic/recomended/two-min.jpg" data-at2x="pic/recomended/two-min.jpg" alt
-                                            width="700">
-                                    </div>
-                                </a>
-                                <div class="location"><i class="flaticon-suntour-map"></i> Mount Everest</div>
-                            </div>
-                            <!-- Recomended Content-->
-                            <div class="recom-item-body">
-                                <a href="rec-tour-details4.html">
-                                    <h6 class="blog-title">Mount Everest</h6>
-                                </a>
-                                <div class="stars stars-4"></div>
-                                <p class="mb-30">Trekking at the base camp of World's highest mountain, The Mount
-                                    Everest.
-                                </p>
-                                <a href="rec-tour-details4.html" class="recom-button">Read more</a><a
-                                    href="rec-tour-details4.html" class="cws-button small alt">Book now</a>
-                                <div class="action font-5">Offer</div>
-                            </div>
-                            <!-- Recomended Image-->
-                        </div>
-                    </div>
-                    <!-- ! Recomended item-->
-                    <!-- ! Recomended item-->
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h6 class="title-section-top alt-2">Top rated</h6>
+            <h2 class="title-section"><span>Recommended</span> Tours</h2>
+            <p style="color: white">
+              Some of the best tours recommended by us with top notch quality
+              assurance.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="hide-icon-mobile">
+              <i class="flaticon-suntour-world title-icon"></i>
             </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-md-6">
+              <div class="recom-item">
+                <div class="recom-media">
+                  <a href="rec-tour-details1.html">
+                    <div class="pic" style="height: 16rem">
+                      <img
+                        loading="lazy"
+                        src="pic/recomended/Nagarkot.png"
+                        data-at2x="pic/recomended/Nagarkot.png"
+                        alt
+                        width="700"
+                      />
+                    </div>
+                  </a>
+                  <div class="location">
+                    <i class="flaticon-suntour-map"></i> Nagarkot
+                  </div>
+                </div>
+                <!-- Recomended Content-->
+                <div class="recom-item-body">
+                  <a href="rec-tour-details1.html">
+                    <h6 class="blog-title">
+                      Kathmandu & Nagarkot<br />3N/4D(By Air)
+                    </h6>
+                  </a>
+                  <div class="stars stars-4"></div>
+                  <p class="mb-30">
+                    Enjoy the culture of the capital of Nepal and the beauty of
+                    himalayan range from Nagarkot.
+                  </p>
+                  <a href="rec-tour-details1.html" class="recom-button"
+                    >Read more</a
+                  ><a href="rec-tour-details1.html" class="cws-button small alt"
+                    >Book now</a
+                  >
+                  <div class="action font-5">Offer</div>
+                </div>
+                <!-- Recomended Image-->
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="recom-item">
+                <div class="recom-media">
+                  <a href="rec-tour-details2.html">
+                    <div class="pic" style="height: 16rem">
+                      <img
+                        loading="lazy"
+                        src="pic/recomended/pokhara-min.png"
+                        data-at2x="pic/recomended/pokhara-min.png"
+                        alt
+                        width="700"
+                      />
+                    </div>
+                  </a>
+                  <div class="location">
+                    <i class="flaticon-suntour-map"></i> Pokhara
+                  </div>
+                </div>
+                <!-- Recomended Content-->
+                <div class="recom-item-body">
+                  <a href="rec-tour-details2.html">
+                    <h6 class="blog-title">
+                      Kathmandu & Pokhara<br />5N/6D(By Air)
+                    </h6>
+                  </a>
+                  <div class="stars stars-4"></div>
+                  <p class="mb-30">
+                    Two of the most beautiful tourist spots filled with culture
+                    and excitement.
+                  </p>
+                  <a href="rec-tour-details2.html" class="recom-button"
+                    >Read more</a
+                  ><a href="rec-tour-details2.html" class="cws-button small alt"
+                    >Book now</a
+                  >
+                  <div class="action font-5">Offer</div>
+                </div>
+                <!-- Recomended Image-->
+              </div>
+            </div>
+            <!-- Recomended item-->
+            <div class="col-md-6">
+              <div class="recom-item">
+                <div class="recom-media">
+                  <a href="rec-tour-details3.html">
+                    <div class="pic" style="height: 16rem">
+                      <img
+                        loading="lazy"
+                        src="pic/recomended/chitwan.jpg"
+                        data-at2x="pic/recomended/chitwan.jpg"
+                        alt
+                        width="700"
+                      />
+                    </div>
+                  </a>
+                  <div class="location">
+                    <i class="flaticon-suntour-map"></i> Chitwan
+                  </div>
+                </div>
+                <!-- Recomended Content-->
+                <div class="recom-item-body">
+                  <a href="rec-tour-details3.html">
+                    <h6 class="blog-title">
+                      Kathmandu, Pokhara & Chitwan<br />7N/8D(By Air)
+                    </h6>
+                  </a>
+                  <div class="stars stars-5"></div>
+                  <p class="mb-30">
+                    Experience the beauty of the most beautiful places in
+                    Kathmandu, Pokhara and Chitwan National Park.
+                  </p>
+                  <a href="rec-tour-details3.html" class="recom-button"
+                    >Read more</a
+                  ><a href="rec-tour-details3.html" class="cws-button small alt"
+                    >Book now</a
+                  >
+                  <div class="action font-5">Offer</div>
+                </div>
+                <!-- Recomended Images-->
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="recom-item">
+                <div class="recom-media">
+                  <a href="rec-tour-details4.html">
+                    <div class="pic" style="height: 16rem">
+                      <img
+                        loading="lazy"
+                        src="pic/recomended/two-min.jpg"
+                        data-at2x="pic/recomended/two-min.jpg"
+                        alt
+                        width="700"
+                      />
+                    </div>
+                  </a>
+                  <div class="location">
+                    <i class="flaticon-suntour-map"></i> Mount Everest
+                  </div>
+                </div>
+                <!-- Recomended Content-->
+                <div class="recom-item-body">
+                  <a href="rec-tour-details4.html">
+                    <h6 class="blog-title">Mount Everest</h6>
+                  </a>
+                  <div class="stars stars-4"></div>
+                  <p class="mb-30">
+                    Trekking at the base camp of World's highest mountain, The
+                    Mount Everest.
+                  </p>
+                  <a href="rec-tour-details4.html" class="recom-button"
+                    >Read more</a
+                  >
+                  <a href="rec-tour-details4.html" class="cws-button small alt"
+                    >Book now</a
+                  >
+                  <div class="action font-5">Offer</div>
+                </div>
+                <!-- Recomended Image-->
+              </div>
+            </div>
+            <!-- ! Recomended item-->
+            <!-- ! Recomended item-->
+          </div>
+        </div>
+      </div>
     </section>
     <!-- ! recomended section-->
     <!-- company logos -->
     <section class="bg-gray-2">
-        <div class="container" style="padding: 30px;">
-            <div class="row">
-                <div class="col-md-12">
-                    <h4 style="color: rgb(177, 175, 175);font-weight: 100;">We work together with pride</h4>
-                </div>
-            </div>
-            <div class="row" style="margin-bottom: 1rem;">
-                <div class="client-logo-parent" style="display: flex">
-                    <div class="client-logo">
-                        <img src="img/128px-HP_New_Logo_2D.svg.png" loading="lazy" alt="" class="client-image"
-                            style="height: 5rem;">
-                    </div>
-                    <div class="client-logo">
-                        <img src="img/asian-paints.png" loading="lazy" alt="" class="client-image"
-                            style="max-width: 45%;">
-                    </div>
-                    <div class="client-logo">
-                        <img src="img/booking-logo-504475D532-seeklogo.com (1).png" loading="lazy" alt=""
-                            class="client-image">
-                    </div>
-                    <div class="client-logo">
-                        <img src="img/loreal-logo-black-and-white.png" loading="lazy" alt="" class="client-image">
-                    </div>
-                </div>
-            </div>
+      <div class="container" style="padding: 30px">
+        <div class="row">
+          <div class="col-md-12">
+            <h4 style="color: rgb(177, 175, 175); font-weight: 100">
+              We work together with pride
+            </h4>
+          </div>
         </div>
+        <div class="row" style="margin-bottom: 1rem">
+          <div class="client-logo-parent" style="display: flex">
+            <div class="client-logo">
+              <img
+                src="img/128px-HP_New_Logo_2D.svg.png"
+                loading="lazy"
+                alt=""
+                class="client-image"
+                style="height: 5rem"
+              />
+            </div>
+            <div class="client-logo">
+              <img
+                src="img/asian-paints.png"
+                loading="lazy"
+                alt=""
+                class="client-image"
+                style="max-width: 45%"
+              />
+            </div>
+            <div class="client-logo">
+              <img
+                src="img/booking-logo-504475D532-seeklogo.com (1).png"
+                loading="lazy"
+                alt=""
+                class="client-image"
+              />
+            </div>
+            <div class="client-logo">
+              <img
+                src="img/loreal-logo-black-and-white.png"
+                loading="lazy"
+                alt=""
+                class="client-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- company logos end -->
     <!-- Business conferences -->
-    <section class="small-section"
-        style="background-image: url(img/aalok-atreya-MZTafV3sHQo-unsplash.jpg); background-size: cover;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <h2 class="title-section"><span>Business Tours and more</span></h2>
-                    <p style="color: white;">Incentive travels, conferences, business tours and social functions. We are
-                        something more than usual.
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <div class="hide-icon-mobile">
-                        <i class="flaticon-suntour-hotel title-icon"></i>
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="recom-item">
-                            <div class="recom-media">
-                                <a href="incentives.html">
-                                    <div class="pic" style="height: 16rem;"><img loading="lazy"
-                                            src="pic/recomended/conference2.jpg"
-                                            data-at2x="pic/recomended/conference2.jpg" alt width="700"></div>
-                                </a>
-                                <div class="location"></div>
-                            </div>
-                            <!-- Recomended Content-->
-                            <div class="recom-item-body">
-                                <a href="incentives.html">
-                                    <h6 class="blog-title">Incentives</h6>
-                                </a>
-                                <div class="stars stars-4" style="visibility: hidden;"></div>
-                                <p class="mb-30">We belive that incentive tours are one of the most important part of a
-                                    travel company. Providing best incentive packages for the past 35 years.
-                                </p>
-                                <a href="incentives.html" class="recom-button">Read more</a>
-                                <!-- <a href="rec-tour-details1.html" class="cws-button small alt">Book now</a> -->
-                                <div></div>
-                            </div>
-                            <!-- Recomended Image-->
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="recom-item">
-                            <div class="recom-media">
-                                <a href="business-tours.html">
-                                    <div class="pic" style="height: 16rem;"><img loading="lazy"
-                                            src="pic/recomended/just.jpg" data-at2x="pic/recomended/just.jpg" alt
-                                            width="700">
-                                    </div>
-                                </a>
-                                <div class="location"></div>
-                            </div>
-                            <!-- Recomended Content-->
-                            <div class="recom-item-body">
-                                <a href="business-tours.html">
-                                    <h6 class="blog-title">Business Tours</h6>
-                                </a>
-                                <div class="stars stars-4" style="visibility: hidden;"></div>
-                                <p class="mb-30"> When it comes to business tours,
-                                    we offer countless destinations and myriad journeys to make it a fun, exciting
-                                    business trip.
-                                </p>
-                                <a href="business-tours.html" class="recom-button">Read more</a>
-                                <div></div>
-                            </div>
-                            <!-- Recomended Image-->
-                        </div>
-                    </div>
-                </div>
+    <section
+      class="small-section"
+      style="
+        background-image: url(img/aalok-atreya-MZTafV3sHQo-unsplash.jpg);
+        background-size: cover;
+      "
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2 class="title-section"><span>Business Tours and more</span></h2>
+            <p style="color: white">
+              Incentive travels, conferences, business tours and social
+              functions. We are something more than usual.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <div class="hide-icon-mobile">
+              <i class="flaticon-suntour-hotel title-icon"></i>
             </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-md-6">
+              <div class="recom-item">
+                <div class="recom-media">
+                  <a href="incentives.html">
+                    <div class="pic" style="height: 16rem">
+                      <img
+                        loading="lazy"
+                        src="pic/recomended/conference2.jpg"
+                        data-at2x="pic/recomended/conference2.jpg"
+                        alt
+                        width="700"
+                      />
+                    </div>
+                  </a>
+                  <div class="location"></div>
+                </div>
+                <!-- Recomended Content-->
+                <div class="recom-item-body">
+                  <a href="incentives.html">
+                    <h6 class="blog-title">Incentives</h6>
+                  </a>
+                  <div class="stars stars-4" style="visibility: hidden"></div>
+                  <p class="mb-30">
+                    We belive that incentive tours are one of the most important
+                    part of a travel company. Providing best incentive packages
+                    for the past 35 years.
+                  </p>
+                  <a href="incentives.html" class="recom-button">Read more</a>
+                  <!-- <a href="rec-tour-details1.html" class="cws-button small alt">Book now</a> -->
+                  <div></div>
+                </div>
+                <!-- Recomended Image-->
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="recom-item">
+                <div class="recom-media">
+                  <a href="business-tours.html">
+                    <div class="pic" style="height: 16rem">
+                      <img
+                        loading="lazy"
+                        src="pic/recomended/just.jpg"
+                        data-at2x="pic/recomended/just.jpg"
+                        alt
+                        width="700"
+                      />
+                    </div>
+                  </a>
+                  <div class="location"></div>
+                </div>
+                <!-- Recomended Content-->
+                <div class="recom-item-body">
+                  <a href="business-tours.html">
+                    <h6 class="blog-title">Business Tours</h6>
+                  </a>
+                  <div class="stars stars-4" style="visibility: hidden"></div>
+                  <p class="mb-30">
+                    When it comes to business tours, we offer countless
+                    destinations and myriad journeys to make it a fun, exciting
+                    business trip.
+                  </p>
+                  <a href="business-tours.html" class="recom-button"
+                    >Read more</a
+                  >
+                  <div></div>
+                </div>
+                <!-- Recomended Image-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- ! Business conferences -->
     <!-- Gallery Section-->
     <section class="small-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <h2 class="title-section"><span>Delightful </span> Moments</h2>
-                    <div class="cws_divider mb-25 mt-5"></div>
-                    <p>A few moments from our bag of happy memories</p>
-                </div>
-                <div class="col-md-4">
-                    <div class="hide-icon-mobile">
-                        <i class="flaticon-suntour-photo title-icon"></i>
-                    </div>
-                </div>
-                <div class="row portfolio-grid">
-                    <!-- portfolio item-->
-                    <div class="col-md-6 col-sm-12 col-xs-12">
-                        <div class="portfolio-item big">
-                            <!-- portfolio image-->
-                            <a href="img/Mountain/portfolio1.jpg" class="fancy">
-                                <div class="portfolio-media"><img loading="lazy" src="img/Mountain/portfolio1.jpg"
-                                        data-at2x="img/Mountain/portfolio1.jpg"
-                                        style="height: 19rem; object-fit: cover;" alt></div>
-                            </a>
-                            <div class="links"><a href="img/Mountain/portfolio1.jpg" class="fancy"><i
-                                        class="fa fa-expand"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- portfolio item-->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <div class="portfolio-item">
-                            <!-- portfolio image-->
-                            <a href="img/Culture&temples/Swayambhunath.jpg" class="fancy">
-                                <div class="portfolio-media"><img loading="lazy"
-                                        src="img/Culture&temples/Swayambhunath.jpg"
-                                        data-at2x="img/Culture&temples/Swayambhunath.jpg"
-                                        style="height: 19rem; object-fit: cover;" alt>
-                                </div>
-                            </a>
-                            <div class="links"><a href="img/Culture&temples/Swayambhunath.jpg" class="fancy"><i
-                                        class="fa fa-expand"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- portfolio item-->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <div class="portfolio-item">
-                            <!-- portfolio image-->
-                            <a href="img/Mountain/KIRAN ME23.jpeg" class="fancy">
-                                <div class="portfolio-media"><img loading="lazy" src="img/Mountain/KIRAN ME23.jpeg"
-                                        data-at2x="img/mountain/KIRAN ME23.jpeg"
-                                        style="height: 19rem; object-fit: cover;" alt></div>
-                            </a>
-                            <div class="links"><a href="img/Mountain/KIRAN ME23.jpeg" class="fancy"><i
-                                        class="fa fa-expand"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- portfolio item-->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <div class="portfolio-item">
-                            <!-- portfolio image-->
-                            <a href="img/Miscellaneous/happyFaces.JPG" class="fancy">
-                                <div class="portfolio-media"><img loading="lazy" src="img/Miscellaneous/happyFaces.JPG"
-                                        data-at2x="img/Miscellaneous/happyFaces.JPG"
-                                        style="height: 19rem; object-fit: cover;" alt></div>
-                            </a>
-                            <div class="links"><a href="img/Miscellaneous/happyFaces.JPG" class="fancy"><i
-                                        class="fa fa-expand"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- portfolio item-->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <div class="portfolio-item">
-                            <!-- portfolio image-->
-                            <a href="img/Mountain/KIRAN ME30.jpeg" class="fancy">
-                                <div class="portfolio-media"><img loading="lazy" src="img/Mountain/KIRAN ME30.jpeg"
-                                        data-at2x="img/Mountain/KIRAN ME30.jpeg"
-                                        style="height: 19rem; object-fit: cover;" alt></div>
-                            </a>
-                            <div class="links"><a href="img/Mountain/KIRAN ME30.jpeg" class="fancy"><i
-                                        class="fa fa-expand"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- portfolio item-->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <div class="portfolio-item">
-                            <!-- portfolio image-->
-                            <a href="img/Rafting/DVS111008-28572.jpg" class="fancy">
-                                <div class="portfolio-media"><img loading="lazy" src="img/Rafting/DVS111008-28572.jpg"
-                                        data-at2x="img/Rafting/DVS111008-28572.jpg"
-                                        style="height: 19rem; object-fit: cover;" alt></div>
-                            </a>
-                            <div class="links"><a href="img/Rafting/DVS111008-28572.jpg" class="fancy"><i
-                                        class="fa fa-expand"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- portfolio item-->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <div class="portfolio-item">
-                            <!-- portfolio image-->
-                            <a href="img/UltraLightFlight/IMG_7848.JPG" class="fancy">
-                                <div class="portfolio-media"><img loading="lazy" src="img/UltraLightFlight/IMG_7848.JPG"
-                                        data-at2x="img/UltraLightFlight/IMG_7848.JPG"
-                                        style="height: 19rem; object-fit: cover;" alt></div>
-                            </a>
-                            <div class="links"><a href="img/UltraLightFlight/IMG_7848.JPG" class="fancy"><i
-                                        class="fa fa-expand"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- portfolio item-->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <div class="portfolio-item">
-                            <!-- portfolio image-->
-                            <a href="img/Mountain/KIRAN ME14.jpeg" class="fancy">
-                                <div class="portfolio-media"><img loading="lazy" src="img/Mountain/KIRAN ME14.jpeg"
-                                        data-at2x="img/Mountain/KIRAN ME14.jpeg"
-                                        style="height: 19rem; object-fit: cover;" alt></div>
-                            </a>
-                            <div class="links"><a href="img/Mountain/KIRAN ME14.jpeg" class="fancy"><i
-                                        class="fa fa-expand"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- portfolio item-->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <div class="portfolio-item">
-                            <!-- portfolio image-->
-                            <a href="img/Mountain/KIRAN ME21.jpeg" class="fancy">
-                                <div class="portfolio-media"><img loading="lazy" src="img/Mountain/KIRAN ME21.jpeg"
-                                        data-at2x="img/Mountain/KIRAN ME21.jpeg"
-                                        style="height: 19rem; object-fit: cover;" alt></div>
-                            </a>
-                            <div class="links"><a href="img/Mountain/KIRAN ME21.jpeg" class="fancy"><i
-                                        class="fa fa-expand"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- portfolio item-->
-                    <div class="col-md-6 col-sm-12 col-xs-12">
-                        <div class="portfolio-item big">
-                            <!-- portfolio image-->
-                            <a href="img/Rafting/DVS111008-27995.jpg" class="fancy">
-                                <div class="portfolio-media"><img loading="lazy" src="img/Rafting/DVS111008-27995.jpg"
-                                        data-at2x="img/Rafting/DVS111008-27995.jpg" alt
-                                        style="height: 19rem; object-fit: cover;"></div>
-                            </a>
-                            <div class="links"><a href="img/Rafting/DVS111008-27995.jpg" class="fancy"><i
-                                        class="fa fa-expand"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2 class="title-section"><span>Delightful </span> Moments</h2>
+            <div class="cws_divider mb-25 mt-5"></div>
+            <p>A few moments from our bag of happy memories</p>
+          </div>
+          <div class="col-md-4">
+            <div class="hide-icon-mobile">
+              <i class="flaticon-suntour-photo title-icon"></i>
             </div>
+          </div>
+          <div class="row portfolio-grid">
+            <!-- portfolio item-->
+            <div class="col-md-6 col-sm-12 col-xs-12">
+              <div class="portfolio-item big">
+                <!-- portfolio image-->
+                <a href="img/Mountain/portfolio1.jpg" class="fancy">
+                  <div class="portfolio-media">
+                    <img
+                      loading="lazy"
+                      src="img/Mountain/portfolio1.jpg"
+                      data-at2x="img/Mountain/portfolio1.jpg"
+                      style="height: 19rem; object-fit: cover"
+                      alt
+                    />
+                  </div>
+                </a>
+                <div class="links">
+                  <a href="img/Mountain/portfolio1.jpg" class="fancy"
+                    ><i class="fa fa-expand"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- portfolio item-->
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <div class="portfolio-item">
+                <!-- portfolio image-->
+                <a href="img/Culture&temples/Swayambhunath.jpg" class="fancy">
+                  <div class="portfolio-media">
+                    <img
+                      loading="lazy"
+                      src="img/Culture&temples/Swayambhunath.jpg"
+                      data-at2x="img/Culture&temples/Swayambhunath.jpg"
+                      style="height: 19rem; object-fit: cover"
+                      alt
+                    />
+                  </div>
+                </a>
+                <div class="links">
+                  <a href="img/Culture&temples/Swayambhunath.jpg" class="fancy"
+                    ><i class="fa fa-expand"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- portfolio item-->
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <div class="portfolio-item">
+                <!-- portfolio image-->
+                <a href="img/Mountain/KIRAN ME23.jpeg" class="fancy">
+                  <div class="portfolio-media">
+                    <img
+                      loading="lazy"
+                      src="img/Mountain/KIRAN ME23.jpeg"
+                      data-at2x="img/mountain/KIRAN ME23.jpeg"
+                      style="height: 19rem; object-fit: cover"
+                      alt
+                    />
+                  </div>
+                </a>
+                <div class="links">
+                  <a href="img/Mountain/KIRAN ME23.jpeg" class="fancy"
+                    ><i class="fa fa-expand"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- portfolio item-->
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <div class="portfolio-item">
+                <!-- portfolio image-->
+                <a href="img/Miscellaneous/happyFaces.JPG" class="fancy">
+                  <div class="portfolio-media">
+                    <img
+                      loading="lazy"
+                      src="img/Miscellaneous/happyFaces.JPG"
+                      data-at2x="img/Miscellaneous/happyFaces.JPG"
+                      style="height: 19rem; object-fit: cover"
+                      alt
+                    />
+                  </div>
+                </a>
+                <div class="links">
+                  <a href="img/Miscellaneous/happyFaces.JPG" class="fancy"
+                    ><i class="fa fa-expand"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- portfolio item-->
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <div class="portfolio-item">
+                <!-- portfolio image-->
+                <a href="img/Mountain/KIRAN ME30.jpeg" class="fancy">
+                  <div class="portfolio-media">
+                    <img
+                      loading="lazy"
+                      src="img/Mountain/KIRAN ME30.jpeg"
+                      data-at2x="img/Mountain/KIRAN ME30.jpeg"
+                      style="height: 19rem; object-fit: cover"
+                      alt
+                    />
+                  </div>
+                </a>
+                <div class="links">
+                  <a href="img/Mountain/KIRAN ME30.jpeg" class="fancy"
+                    ><i class="fa fa-expand"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- portfolio item-->
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <div class="portfolio-item">
+                <!-- portfolio image-->
+                <a href="img/Rafting/DVS111008-28572.jpg" class="fancy">
+                  <div class="portfolio-media">
+                    <img
+                      loading="lazy"
+                      src="img/Rafting/DVS111008-28572.jpg"
+                      data-at2x="img/Rafting/DVS111008-28572.jpg"
+                      style="height: 19rem; object-fit: cover"
+                      alt
+                    />
+                  </div>
+                </a>
+                <div class="links">
+                  <a href="img/Rafting/DVS111008-28572.jpg" class="fancy"
+                    ><i class="fa fa-expand"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- portfolio item-->
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <div class="portfolio-item">
+                <!-- portfolio image-->
+                <a href="img/UltraLightFlight/IMG_7848.JPG" class="fancy">
+                  <div class="portfolio-media">
+                    <img
+                      loading="lazy"
+                      src="img/UltraLightFlight/IMG_7848.JPG"
+                      data-at2x="img/UltraLightFlight/IMG_7848.JPG"
+                      style="height: 19rem; object-fit: cover"
+                      alt
+                    />
+                  </div>
+                </a>
+                <div class="links">
+                  <a href="img/UltraLightFlight/IMG_7848.JPG" class="fancy"
+                    ><i class="fa fa-expand"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- portfolio item-->
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <div class="portfolio-item">
+                <!-- portfolio image-->
+                <a href="img/Mountain/KIRAN ME14.jpeg" class="fancy">
+                  <div class="portfolio-media">
+                    <img
+                      loading="lazy"
+                      src="img/Mountain/KIRAN ME14.jpeg"
+                      data-at2x="img/Mountain/KIRAN ME14.jpeg"
+                      style="height: 19rem; object-fit: cover"
+                      alt
+                    />
+                  </div>
+                </a>
+                <div class="links">
+                  <a href="img/Mountain/KIRAN ME14.jpeg" class="fancy"
+                    ><i class="fa fa-expand"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- portfolio item-->
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <div class="portfolio-item">
+                <!-- portfolio image-->
+                <a href="img/Mountain/KIRAN ME21.jpeg" class="fancy">
+                  <div class="portfolio-media">
+                    <img
+                      loading="lazy"
+                      src="img/Mountain/KIRAN ME21.jpeg"
+                      data-at2x="img/Mountain/KIRAN ME21.jpeg"
+                      style="height: 19rem; object-fit: cover"
+                      alt
+                    />
+                  </div>
+                </a>
+                <div class="links">
+                  <a href="img/Mountain/KIRAN ME21.jpeg" class="fancy"
+                    ><i class="fa fa-expand"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- portfolio item-->
+            <div class="col-md-6 col-sm-12 col-xs-12">
+              <div class="portfolio-item big">
+                <!-- portfolio image-->
+                <a href="img/Rafting/DVS111008-27995.jpg" class="fancy">
+                  <div class="portfolio-media">
+                    <img
+                      loading="lazy"
+                      src="img/Rafting/DVS111008-27995.jpg"
+                      data-at2x="img/Rafting/DVS111008-27995.jpg"
+                      alt
+                      style="height: 19rem; object-fit: cover"
+                    />
+                  </div>
+                </a>
+                <div class="links">
+                  <a href="img/Rafting/DVS111008-27995.jpg" class="fancy"
+                    ><i class="fa fa-expand"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- ! gallery section-->
     <!-- about nebuti-->
     <section class="page-section cws_prlx_section bg-gray-40">
-        <img loading="lazy" src="img/nepal_illus.jpg" alt class="cws_prlx_layer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2 class="title-section-top alt">About</h2>
-                    <h2 class="title-section alt mb-20"><span class="title-section alt mb-20">NEBUTI</span> Travels</h2>
-                    <h5 class="color-white action font-4" style="font-weight:600">One of the best travel companies based
-                        in Nepal with over 34 years of experience. We provide you best in class services including
-                        Tailormade Tours, Conference Organiser, Incentive Travels, Corporate Travels, Sports Travels,
-                        and much
-                        more.
-                    </h5>
-                    <div class="cws_divider short mb-30 mt-30"></div>
-                    <h3 class="font-5 color-white font-medium">Nebuti Travels Pvt. Ltd.</h3>
-                </div>
-                <div class="col-md-6">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <embed class="embed-responsive-item" src="https://www.youtube.com/embed/f3GaWoDfWvs"
-                            loading="lazy" allowfullscreen>
-                        </embed>
-                    </div>
-                </div>
+      <img
+        loading="lazy"
+        src="img/nepal_illus.jpg"
+        alt
+        class="cws_prlx_layer"
+      />
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="title-section-top alt">About</h2>
+            <h2 class="title-section alt mb-20">
+              <span class="title-section alt mb-20">NEBUTI</span> Travels
+            </h2>
+            <h5 class="color-white action font-4" style="font-weight: 600">
+              One of the best travel companies based in Nepal with over 34 years
+              of experience. We provide you best in class services including
+              Tailormade Tours, Conference Organiser, Incentive Travels,
+              Corporate Travels, Sports Travels, and much more.
+            </h5>
+            <div class="cws_divider short mb-30 mt-30"></div>
+            <h3 class="font-5 color-white font-medium">
+              Nebuti Travels Pvt. Ltd.
+            </h3>
+          </div>
+          <div class="col-md-6">
+            <div class="embed-responsive embed-responsive-16by9">
+              <embed
+                class="embed-responsive-item"
+                src="https://www.youtube.com/embed/f3GaWoDfWvs"
+                loading="lazy"
+                allowfullscreen
+              />
+              <!-- </embed> -->
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- about nebuti ends -->
     <!-- latest news-->
     <!-- ! latest news-->
-    <!-- testimonials section-->
-    <!-- <section class="small-section cws_prlx_section bg-blue-40"><img src="img/vector_bg.jpg" alt class="cws_prlx_layer">
-         <div class="container">
-           <div class="row">
-             <div class="col-md-8">
-               <h6 class="title-section-top font-4">Happy Memories</h6>
-               <h2 class="title-section alt-2"><span>Our</span> Testimonials</h2>
-               <div class="cws_divider mb-25 mt-5"></div>
-             </div>
-           </div>
-           <div class="row"> -->
-    <!-- testimonial carousel-->
-    <!-- <div class="owl-three-item"> -->
-    <!-- testimonial item-->
-    <!-- <div class="testimonial-item">
-         <div class="testimonial-top"><a href="hotels-details.html">
-             <div class="pic"><img src="img/prayer_flags.jpg" alt></div>
-           </a>
-           <div class="author"> <img src="pic/testimonial/author/1.jpg" alt></div>
-         </div> -->
-    <!-- testimonial content-->
-    <!-- <div class="testimonial-body">
-         <h5 class="title"><span>Nicole</span> Beck</h5>
-         <div class="stars stars-5"></div>
-         <p class="align-center">Had a wonderful experience throughout the entire tour.</p><a
-           href="page-about-us.html" class="testimonial-button">Read more</a>
-         </div>
-         </div> -->
-    <!-- testimonial item-->
-    <!-- <div class="testimonial-item">
-         <div class="testimonial-top"><a href="hotels-details.html">
-             <div class="pic"><img src="img/prayer_flags.jpg" alt></div>
-           </a>
-           <div class="author"> <img src="pic/testimonial/author/2.jpg" alt></div>
-         </div> -->
-    <!-- testimonial content -->
-    <!-- <div class="testimonial-body">
-         <h5 class="title"><span>Peter</span> Robertson</h5>
-         <div class="stars stars-5"></div>
-         <p class="align-center">One of the most beautiful places ever visited.</p><a href="page-about-us.html"
-           class="testimonial-button">Read more</a>
-         </div>
-         </div> -->
-    <!-- testimonial item-->
-    <!-- <div class="testimonial-item">
-         <div class="testimonial-top"><a href="hotels-details.html">
-             <div class="pic"><img src="img/prayer_flags.jpg" alt></div>
-           </a>
-           <div class="author"> <img src="pic/testimonial/author/3.jpg" alt></div>
-         </div> -->
-    <!-- testimonial content-->
-    <!-- <div class="testimonial-body">
-         <h5 class="title"><span>Kathy</span> Harrison</h5>
-         <div class="stars stars-5"></div>
-         <p class="align-center">Great experience and a quality tour. Thanks Nebuti.</p><a
-           href="page-about-us.html" class="testimonial-button">Read more</a>
-         </div>
-         </div> -->
-    <!-- testimonial item-->
-    <!-- <div class="testimonial-item">
-         <div class="testimonial-top"><a href="hotels-details.html">
-             <div class="pic"><img src="img/prayer_flags.jpg" alt></div>
-           </a>
-           <div class="author"> <img src="pic/testimonial/author/1.jpg" alt></div>
-         </div> -->
-    <!-- testimonial content-->
-    <!-- <div class="testimonial-body">
-         <h5 class="title"><span>Nicole</span> Beck</h5>
-         <div class="stars stars-5"></div>
-         <p class="align-center">Best travel company in Nepal with professional people.</p><a
-           href="page-about-us.html" class="testimonial-button">Read more</a>
-         </div>
-         </div>
-         </div>
-         </div>
-         </div>
-         </section> -->
+    <!-- testimonials section -->
+    <section class="small-section cws_prlx_section bg-blue-40">
+      <img src="img/vector_bg.jpg" alt class="cws_prlx_layer" />
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h6 class="title-section-top alt-2">Happy Memories</h6>
+            <h2 class="title-section alt-2"><span>Our</span> Testimonials</h2>
+            <div class="cws_divider mb-25 mt-5"></div>
+          </div>
+        </div>
+        <div class="row testimonials-carousel">
+          <!-- testimonial carousel-->
+          <div class="owl-three-item"></div>
+        </div>
+      </div>
+    </section>
     <!-- ! testimonials section-->
     <!-- call out section-->
     <section class="contact-us pt-20 pb-20 relative">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2 class="title-section alt-2" style="padding:30px; padding-bottom: 2rem; color: #2c2c2c;">Book
-                        your tour today!
-                    </h2>
-                    <a href="/page-contact.html">
-                        <button type="button" class="btn-change1">Let's Talk</button>
-                    </a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2
+              class="title-section alt-2"
+              style="padding: 30px; padding-bottom: 2rem; color: #2c2c2c"
+            >
+              Book your tour today!
+            </h2>
+            <a href="/page-contact.html">
+              <button type="button" class="btn-change1">Let's Talk</button>
+            </a>
+          </div>
         </div>
+      </div>
     </section>
     <!-- ! call out section-->
-    </div>
+    <!-- </div> -->
     <div class="modal fade" id="myModal" role="dialog"></div>
     <!-- footer-->
     <div id="footer"></div>
     <div id="scroll-top"><i class="fa fa-angle-up"></i></div>
     <!-- ! footer-->
+    <script type="text/javascript">
+      function loadJS(file) {
+        // DOM: Create the script element
+        var jsElm = document.createElement("script");
+        // set the type attribute
+        jsElm.type = "application/javascript";
+        // make the script element load file
+        jsElm.src = file;
+        // finally insert the element to the body element in order to load the script
+        document.body.appendChild(jsElm);
+      }
+    </script>
+    <script type="text/javascript">
+      var testimonials = [
+        {
+          name: "Vineet Agrawal",
+          url: "https://lh3.googleusercontent.com/a-/AD_cMMScl4ejrC868nmTxNOlOmGckFNiZ3HCCBiZM4gIcTE=s120-c-c0x00000000-cc-rp-mo-ba3-br100",
+          ago: "4 months ago",
+          review:
+            "Rishav and team thank you for your service. Your company was so cooperative that our trip went extremely smoothly. Couldn't have asked for anything more. Highly recommend your services. Thank you so much for everything! Your team made my trip memorable for life.",
+          rating: 5,
+        },
+        {
+          name: "Pradeep Jagan",
+          url: "https://lh3.googleusercontent.com/a-/AD_cMMSxrT_9eJB4luFJXyAXI7N1LmWSbPI8Ye6nuKal0jQ=s120-c-c0x00000000-cc-rp-mo-ba2-br100",
+          ago: "4 weeks ago",
+          review:
+            "Our Kathmandu & Pokhara Trip was Wonderfully arranged by Nebuti.. Thank You Mr.Min, He coordinated So well & Patient to all our demands & needs , Especially Bunjee Jumping is a experience we couldn't forget... Thank you Nebuti. Thank you Nepal...",
+          rating: 5,
+        },
+        {
+          name: "Mradul Gupta",
+          url: "https://lh3.googleusercontent.com/a-/AD_cMMTnEyzGU1ksVSIVe38R5ol6uyTVgIkpTFuIrxPTTg=s120-c-c0x00000000-cc-rp-mo-br100",
+          ago: "3 months ago",
+          review:
+            "Our main purpose was to visit Muktinath temple and we seeked the services of Nebuti travels for 2 helicopters chartered from Kathmandu to visit the temple. All arrangements were seamless and extremely convenient. Thank you Rishav for all your support and coordination. Shall visit again to visit the rest of your beautiful country.",
+          rating: 5,
+        },
+        {
+          name: "Shyamsundar Sarma",
+          url: "https://lh3.googleusercontent.com/a/AAcHTtfodZnCc2eBAivDz6EpI8gvJKYL4q9c6TDbjz6c=s120-c-c0x00000000-cc-rp-mo-br100",
+          ago: "2 months ago",
+          review:
+            "Arrangements done by your group was par excellence and our stay was quite comfortable throughout my period of stay in Nepal. Look forward to utilise your service in our ensuing visit at the earliest possible time. Shyam Sundar Bengaluru India",
+          rating: 5,
+        },
+        {
+          name: "Krishna Sharma",
+          url: "https://lh3.googleusercontent.com/a-/AD_cMMSPbBIQMJ5prVYAZic5CKL1UrFz-3_m6s4CKgSxRBU=s120-c-c0x00000000-cc-rp-mo-ba5-br100",
+          ago: "3 months ago",
+          review:
+            "Undoubtedly the best provider in town!\n\nUsing Nebuti since 3 months now. And across using Nebuti as my travel partner for more than 20 days of full service so far, I have 0 place to complain.\n\nFrom hotels, to flights, to vehicle. Nebuti has been provided the best service for me.\n\nJust a message and my request is processed even if its late night or early morning without a single hesitation.\n\nTry for yourself and see the utmost service you will receive from the team. 😊\n\n#travel #nepal #domestic #flights #hotels #flights #bookings #reservations #corporate #service",
+          rating: 5,
+        },
+        {
+          name: "Shiju Kumar S",
+          url: "https://lh3.googleusercontent.com/a-/AD_cMMRrtWr-SkcqbX6yaxVn6SW7BxHXZRrWWdr-G1vb=s120-c-c0x00000000-cc-rp-mo-br100",
+          ago: "a month ago",
+          review:
+            "Place at Nepal was lovely, you can visit many historical places and in Eve go around wz bars and casino",
+          rating: 5,
+        },
+        {
+          name: "Samiksha Mahajan",
+          url: "https://lh3.googleusercontent.com/a-/AD_cMMRVYbPkRJ4Izrz6EKPkKxtleFkq-BBxlAABzE4APA=s120-c-c0x00000000-cc-rp-mo-br100",
+          ago: "2 months ago",
+          review:
+            "I visited Nepal during the year end festivity. Despite their busy schedule Bipul made sure to keep in touch with us every day and kept our driver well informed too. They were also very flexible with the last minute changes in the plan. The itinery was very well planned and selection of the hotels was great. Vehicle was very well maintained and our driver Sushil was always before time. My parents and I are very happy with their hospitality.  I am highly recommending their service to my friends and family.",
+          rating: 5,
+        },
+        {
+          name: "Vaibhav Rusia",
+          url: "https://lh3.googleusercontent.com/a-/AD_cMMSvEaEuvSBQeuVUnLFMv0vgX7Dr5DPtYzQHtXDq8w=s120-c-c0x00000000-cc-rp-mo-br100",
+          ago: "4 months ago",
+          review:
+            "My experiences with Nebuti Travels were refreshingly different. All the arrangements made for my travel abroad were meticulous. Where they made the difference was that they were proactively reminding me of actions to be taken before the journey and during the journey. They were always willing to step in and help in case of any problem.",
+          rating: 5,
+        },
+        {
+          name: "Vikramveer Singh",
+          url: "https://lh3.googleusercontent.com/a/AAcHTtc8G0LIxYXBjhMfs7xgWMpffGb5-bi3e--1J5th=s120-c-c0x00000000-cc-rp-mo-ba2-br100",
+          ago: "2 months ago",
+          review:
+            "Exceptional service\nStaff is very supportive\nWe have sent our parents to the Nepal trip and our coordinator Mr Minh Khatri really made it comfortable and made sure that our parents are at comfort. He had planned everything well in advance and made sure our parents do not have any problem.\nAlso the driver Mr Deepak is a great person.\nAll the staff is very friendly, supportive, caring and make sures you’re at your comfort\n\nHighly recommended",
+          rating: 5,
+        },
+        {
+          name: "Rushi Soni",
+          url: "https://lh3.googleusercontent.com/a/AAcHTtecuZAomTM2thUsbzbaD9J6GtJFZ95ZoG8qNOIv=s120-c-c0x00000000-cc-rp-mo-br100",
+          ago: "2 months ago",
+          review:
+            "We have wonderful time in Nepal as we booked our package through Nebuti Travel... We had really true Experience what after sales service..\n\nEveryday driver come before schedule time so we not late for our itinerary schedule.\n\nAlso I want to added that Everyday morning and evening both time got call from office for feedback and plan for tour as well as next day plan.\n\nThey are really take care of comfort of person while traveling..\n\nOnce again Thank you Mr. Rishav,  Mr Minh Khatri and team for making our holiday wonderful...",
+          rating: 5,
+        },
+        {
+          name: "Bans Thapa",
+          url: "https://lh3.googleusercontent.com/a-/AD_cMMTuaH2aWekcA3mwhPwsveL6wyEbw_x_XvFXwasF=s120-c-c0x00000000-cc-rp-mo-br100",
+          ago: "a month ago",
+          review:
+            "Air port pic up to drop everything we experienced was splendid. We will wish bright future of your company and further we will suggest every our near and dear to visit nepal and see you there. Many thanks for your services.",
+          rating: 4,
+        },
+        {
+          name: "Pooja Bichu",
+          url: "https://lh3.googleusercontent.com/a/AAcHTtdw9PlfCDeZHkxIYLUxLPz7b6xXqbk3jPLc_tAo=s120-c-c0x00000000-cc-rp-mo-br100",
+          ago: "a week ago",
+          review:
+            "Nebuti travels had arranged our nepal trip.. nepal is a beautiful country with lovely places and polite people and yummy food.\nSpecial mention about Mr Min - who co ordinated our daily plans, made it appointment to call us beforehand and ensure drivers arrive on time to take us around.",
+          rating: 5,
+        },
+        {
+          name: "Chaitrali Bedekar",
+          url: "https://lh3.googleusercontent.com/a/AAcHTtdWIfC9ErHyG7ID_28QWvvxTyvTGFN0OWFYYNaf=s120-c-c0x00000000-cc-rp-mo-ba3-br100",
+          ago: "3 months ago",
+          review:
+            "The best travel services provided in Nepal, the selection of hotels was very good, drivers were punctual and very well informed. Thank u Sushil and team hava a great experience.",
+          rating: 5,
+        },
+        {
+          name: "Yogesh Deshpande",
+          url: "https://lh3.googleusercontent.com/a/AAcHTteOJAIYT2I6CbuaMlXcFbbbG9drm42dTCg52Aqc=s120-c-c0x00000000-cc-rp-mo-br100",
+          ago: "4 weeks ago",
+          review:
+            "We traveled to Kathmandu, Pokhara and Chitwan as Family...in Apr 2023...\nRight from Airport, Nebuti travels representative was in touch with us and have arranged the trip very professionally...\nThe vehicle driver also was very nice and very punctual...\nIt was a 8 day trip and they have handled it quite nicely, appreciable...!!!\nQuite memorable trip because of Nebuti travels....Keep it up guys...!!!\n\nI will definitely recommend Nebuti travels to my references for any future trips to Nepal...\n\nThanks for everything...!!!",
+          rating: 5,
+        },
+        {
+          name: "Dipak H Agarwal",
+          url: "https://lh3.googleusercontent.com/a/AAcHTtd_DVhT05W7TV9KB6oQJfiV4WvJoTetpwwGiH7U=s120-c-c0x00000000-cc-rp-mo-br100",
+          ago: "3 weeks ago",
+          review:
+            "Our Trip with Min & his team via our Travel Agent Quora was amazing. We got services on time and full guidance and cooperation. Our flight was re-directed and landed late at 12 Pm in night instead of 8:30 still the cab was available at odd time for Airport PickUp, always the cab was available for sight seeing and Min was regular at guidance to select places. Also our Driver Kaji was polite and always at service. We enjoyed Pashupati Temple, Chandragiri Hills and few of the off-site like NagarKot.",
+          rating: 5,
+        },
+        {
+          name: "preethi shiberkere",
+          url: "https://lh3.googleusercontent.com/a/AAcHTtdXkAD5q4aWwI8idISuaPRqn8O7fSPE4OWhzIet=s120-c-c0x00000000-cc-rp-mo-br100",
+          ago: "a week ago",
+          review:
+            "I am from India. Travelled to Kathmandu and Pokhara for appx 4 days withmy friends. I was interacting with Mr. Bipul. It was really amazing trip for us through Nebuti.\nThe holiday package for very well organized which thy booked, especially Sarangkot Mountain Lodge was awesome and the view was worth seeing.  If v plan to visit again,  will surely book through Nebuti. Thanks a lot for ur hospitality Mr.Rishab, Mr.Bipul, Mr.Biki and Mr.Binesh.",
+          rating: 5,
+        },
+        {
+          name: "NEHA GULATI",
+          url: "https://lh3.googleusercontent.com/a/AAcHTtcrXGHdYuJATC4FzDN9qCwKAVwMbof9zN1fO_KS=s120-c-c0x00000000-cc-rp-mo-br100",
+          ago: "4 months ago",
+          review:
+            "If u r planning a trip to Nepal, Nebuti travels is the best travel company to book ur trip...\nWe had a tour of Kathmandu & Pokhara in November 2022\nTrip was well organized & staff was very cooperative..\nOur trip was great & memorable one, Thanks to Nebuti travels...😊",
+          rating: 5,
+        },
+        {
+          name: "Anupam Thakur",
+          url: "https://lh3.googleusercontent.com/a-/AD_cMMRc9aULxhn9NyH9h4fsKgzZYihWqikX1LE9ji6k=s120-c-c0x00000000-cc-rp-mo-ba3-br100",
+          ago: "2 months ago",
+          review:
+            "It was a great experience with Nebuti Travels specially with the people with whom we interacted and helped us in the overall trip.\n\nMin did an extremely wonderful job in coordinating all the transfers within Nepal. We are grateful to him for his interest in giving us comfort at all times during each and every journey from one city to another.\nThe driver Dhana ji was very much experienced and humble. His driving was so good that my elderly parents did not even feel any kind of exhaustion due to the 4-5 hrs transfers between the different locations.\nMin's suggestions were perfect. His decision and Dhana ji's decision to visit Manokamana Devi Temple through Cable Car while returning to Kathmandu from Chitwan was awesome.\n\nThanks Min, Dhana ji and Nebuti Travels for the memorable trip.\nI would like to connect with you guys again and definitely recommend everyone else to avail your services.\nThank you very much!",
+          rating: 5,
+        },
+        {
+          name: "Brijendra Kumar Rastogi",
+          url: "https://lh3.googleusercontent.com/a/AAcHTtfMAFKHHF57i3lSN8c3t3gdAesFt9onppKEyKe2=s120-c-c0x00000000-cc-rp-mo-br100",
+          ago: "a month ago",
+          review:
+            "Due to flight cancellation.we were suffering, but the Nebuti  officer MR Bipul has arranged the Vehicle on the spot . Only during the first day sight seen. The driver was not up to mark and he has not detailed about visiting places and it's time. Other wise the service was good",
+          rating: 4,
+        },
+        {
+          name: "Viresh Kumar",
+          url: "https://lh3.googleusercontent.com/a/AAcHTtfB7zhrE6BY0TtpkOUu0FWIGD5BFVbfm2078Ryl=s120-c-c0x00000000-cc-rp-mo-ba4-br100",
+          ago: "3 weeks ago",
+          review:
+            "We had the services of Nebuti Travels as Makemytrip partner. The provided services were excellent. Even when there was a little problem at the hotel in Pokhara, Bipul helped resolve the problem quickly. The provided driver Lekhraj was very good and he showed us many things. He was very helpful.  All days we received vehicle on time and it was all a very smooth experience. Thank you.",
+          rating: 5,
+        },
+      ];
+
+      for (var i = 0; i < testimonials.length; i++) {
+        var testimonial = `
+            <div class="testimonial-item">
+              <div class="testimonial-top">
+                <div class="pic"><img src="img/prayer_flags.jpg" alt /></div>
+                <div class="author">
+                  <img src="${testimonials[i].url}" alt />
+                </div>
+              </div>
+              <!-- testimonial content-->
+              <div class="testimonial-body">
+                <h5 class="title"><span>${testimonials[i].name}</span></h5>
+                <div class="stars stars-${testimonials[i].rating}"></div>
+                <p class="align-center" style="height: 15rem; overflow: scroll;">${testimonials[i].review}</p>
+                <a href="https://www.google.com/maps/place/Nebuti+Travels+Pvt+Ltd/@27.7039165,85.3261038,15z/data=!4m15!1m8!3m7!1s0x39eb19021b3acb99:0x920ceee618a3a24!2sNebuti+Travels+Pvt+Ltd!8m2!3d27.7039165!4d85.3261038!10e1!16s%2Fg%2F11rkc_j__y!3m5!1s0x39eb19021b3acb99:0x920ceee618a3a24!8m2!3d27.7039165!4d85.3261038!16s%2Fg%2F11rkc_j__y?entry=ttu" class="testimonial-button">Read more</a>
+              </div>
+            </div>
+            `;
+        document.getElementsByClassName("owl-three-item")[0].innerHTML +=
+          testimonial;
+      }
+      loadJS("js/owl.carousel.js");
+    </script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.sticky.js"></script>
     <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
@@ -741,31 +1162,34 @@
     <script type="text/javascript" src="js/jquery.form.min.js"></script>
     <script type="text/javascript" src="js/script.min.js"></script>
     <script type="text/javascript" src="js/jquery.flexslider.js"></script>
-    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script
+      src="./slick/slick.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
     <script type="text/javascript">
-        $(document).on("ready", function () {
-            $(".slider-for").slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false,
-                fade: true,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                asNavFor: ".slider-nav",
-            });
-            $(".slider-nav").slick({
-                slidesToShow: 3,
-                arrows: false,
-                slidesToScroll: 1,
-                asNavFor: ".slider-for",
-                centerMode: false,
-                focusOnSelect: true,
-                dots: false,
-                autoplay: true,
-                autoplaySpeed: 2000,
-            });
+      $(document).on("ready", function () {
+        $(".slider-for").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          fade: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          asNavFor: ".slider-nav",
         });
+        $(".slider-nav").slick({
+          slidesToShow: 3,
+          arrows: false,
+          slidesToScroll: 1,
+          asNavFor: ".slider-for",
+          centerMode: false,
+          focusOnSelect: true,
+          dots: false,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        });
+      });
     </script>
-</body>
-
+  </body>
 </html>

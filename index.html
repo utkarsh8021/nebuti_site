@@ -1183,15 +1183,23 @@
         var testimonial = `
             <div class="testimonial">
               <div class="video-wrapper">
-                <video width="300" height="400" controls loading="lazy">
-                  <source src=${testimonials[i]} type="video/mp4" />
-                </video>
               </div>
             </div>
             `;
         document.getElementsByClassName("video-testimonials")[0].innerHTML +=
           testimonial;
       }
+
+      setTimeout(() => {
+        for (var i = 0; i < testimonials.length; i++) {
+          document.getElementsByClassName("video-wrapper")[i].innerHTML = `
+          <video width="300" height="400" controls loading="lazy">
+            <source src=${testimonials[i]} type="video/mp4" />
+          </video>
+          `
+        }
+      }, 3000);
+
       loadJS("js/owl.carousel.js");
     </script>
     <script type="text/javascript" src="js/jquery.min.js"></script>

@@ -883,7 +883,7 @@
               <span class="title-section alt mb-20">NEBUTI</span> Travels
             </h2>
             <h5 class="color-white action font-4" style="font-weight: 600">
-              One of the best travel companies based in Nepal with over 34 years
+              One of the best travel companies based in Nepal with over 35 years
               of experience. We provide you best in class services including
               Tailormade Tours, Conference Organiser, Incentive Travels,
               Corporate Travels, Sports Travels, and much more.
@@ -916,14 +916,28 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8">
-            <h6 class="title-section-top alt-2">Happy Memories</h6>
-            <h2 class="title-section alt-2"><span>Our</span> Testimonials</h2>
+            <h2 class="title-section alt-2"><span>Happy Guests</h2></br>
             <div class="cws_divider mb-25 mt-5"></div>
           </div>
         </div>
         <div class="row testimonials-carousel">
           <!-- testimonial carousel-->
-          <div class="owl-three-item"></div>
+          <div class="owl-three-item video-testimonials"></div>
+        </div>
+      </div>
+    </section>
+    <section class="small-section cws_prlx_section bg-blue-40">
+      <img src="img/vector_bg.jpg" alt class="cws_prlx_layer" />
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2 class="title-section alt-2"><span>Feedbacks</h2></br>
+            <div class="cws_divider mb-25 mt-5"></div>
+          </div>
+        </div>
+        <div class="row testimonials-carousel">
+          <!-- testimonial carousel-->
+          <div class="owl-three-item review-testimonials"></div>
         </div>
       </div>
     </section>
@@ -1147,7 +1161,35 @@
               </div>
             </div>
             `;
-        document.getElementsByClassName("owl-three-item")[0].innerHTML +=
+        document.getElementsByClassName("review-testimonials")[0].innerHTML +=
+          testimonial;
+      }
+      loadJS("js/owl.carousel.js");
+    </script>
+
+    <script type="text/javascript">
+      var testimonials = [
+        "./img/videos/1.mp4",
+        "./img/videos/3.mp4",
+        "./img/videos/2.mp4",
+        "./img/videos/4.mp4",
+        "./img/videos/5.mp4",
+        "./img/videos/6.mp4",
+        "./img/videos/7.mp4",
+        "./img/videos/8.mp4"
+      ];
+
+      for (var i = 0; i < testimonials.length; i++) {
+        var testimonial = `
+            <div class="testimonial">
+              <div class="video-wrapper">
+                <video width="300" height="400" controls>
+                  <source src=${testimonials[i]} type="video/mp4" />
+                </video>
+              </div>
+            </div>
+            `;
+        document.getElementsByClassName("video-testimonials")[0].innerHTML +=
           testimonial;
       }
       loadJS("js/owl.carousel.js");

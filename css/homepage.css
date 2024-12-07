@@ -209,3 +209,36 @@ img.hero-img {
     border: 2px solid #2EBF91;
     margin: 5rem auto;
 }
+
+.testimonial {
+    margin: 1rem 2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    flex-shrink: 0; /* Prevent testimonials from shrinking in carousel */
+    scroll-snap-align: start; /* Align testimonials to scroll position */
+}
+
+.testimonial .video-wrapper {
+    margin: 1rem auto;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.testimonial .video-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive Design (Adjust media query points as needed) */
+
+@media screen and (max-width: 768px) {
+    .testimonial .video-wrapper video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
